@@ -1,0 +1,34 @@
+DTHAS - 
+Updated: Sat Oct  12 16:48:00 2013
+Version: 0.01
+
+WHAT IS DTHAS?
+
+DTHAS , designed for the experiment of simulating an OS , is a Unix-like system. As is just for researching, it consists of 6 necessary modules, which are the kernel module, the input-output module, the memory management module, the file system module, the network module and the library module. So far, It can work in text-mode ,support some shell commands and conduct simple communication with other computers by TCP/IP connection.
+
+DTHAS is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+
+
+
+How can I install dthas?
+
+1)Please download the latest version of bochs from "http://bochs.sourceforge.net" and install it first 
+
+2)enter into root directory, execute "rm dthas.img"
+
+3)create a new image with the command bximage. Pay attention the size of the image must be 100mb and the name should be "dthas.img"
+
+4)execute make.sh to compile all the source within dthas and make it into inst/dthas_setup.iso
+
+5)execute bochs.sh to install the objects of dthas within inst/dthas_setup.iso into dthas.img
+
+6)execute bochs_hd.sh to get to start
+
+So far, dthas only supports several commands, such as ls, rmdir, rmfile, mkdir, mkfile, cat, echo, cd, pwd and some network commands. The format of the command is: "dir/command argument". For example, "sys/ls /" is used to list the files/directories within the root directory.
+
+
+
+WHERE CAN I GET MORE INFORMATION?  HOW DO I REPORT PROBLEMS?
+
+You can send emails to zhf.liang@outlook.com 
+

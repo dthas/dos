@@ -1,0 +1,68 @@
+8
+
+dir
+25
+file:///media/deb948c6-f14b-46d8-89f8-b1b068275d08_/home/gah/test/sys_hack/svn/trunk/inst
+file:///media/deb948c6-f14b-46d8-89f8-b1b068275d08_/home/gah/test/sys_hack/svn
+
+
+
+2012-03-24T12:24:14.610846Z
+25
+gah
+
+
+svn:special svn:externals svn:needs-lock
+
+boot.asm
+file
+
+
+
+
+2012-03-24T11:49:55.000000Z
+5f60ec5c1faef9bb248939856b74a5b2
+2012-03-24T12:24:14.610846Z
+25
+gah
+has-props
+
+load.bin
+file
+
+
+
+
+2012-03-24T12:13:58.000000Z
+d939d93d3408fa8b50bb6675a4eccc7c
+2012-03-24T12:24:14.610846Z
+25
+gah
+has-props
+
+boot.bin
+file
+
+
+
+
+2012-03-24T12:13:58.000000Z
+ecbb7fc4f30246766633553d1a44a0bc
+2012-03-24T12:24:14.610846Z
+25
+gah
+has-props
+
+load.asm
+file
+
+
+
+
+2012-03-23T14:03:24.000000Z
+4c3dd86e6e79c9a1de20f83a06d167bf
+2012-03-24T12:24:14.610846Z
+25
+gah
+has-props
+

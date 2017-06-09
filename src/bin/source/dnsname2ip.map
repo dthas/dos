@@ -1,0 +1,378 @@
+Archive member included because of file (symbol)
+
+../../lib/adthas.a(exit.o)    dnsname2ip/start.o (exit)
+../../lib/adthas.a(enpage.o)  dnsname2ip/start.o (enpage)
+../../lib/adthas.a(dns_name2ip.o)
+                              dnsname2ip/u_dnsname2ip.o (dns_name2ip)
+../../lib/adthas.a(sendmsg.o)
+                              ../../lib/adthas.a(exit.o) (send_msg)
+../../lib/adthas.a(syscalla.o)
+                              ../../lib/adthas.a(sendmsg.o) (send)
+
+Allocating common symbols
+Common symbol       size              file
+
+p_recv_nbuf         0x4               dnsname2ip/u_dnsname2ip.o
+p_tmp_data          0x4               dnsname2ip/u_dnsname2ip.o
+wait_schd_tick      0x4               dnsname2ip/u_dnsname2ip.o
+p_send_nbuf         0x4               dnsname2ip/u_dnsname2ip.o
+p_msg_stack         0x4               dnsname2ip/u_dnsname2ip.o
+p_net_stack         0x4               ../../lib/adthas.a(dns_name2ip.o)
+msg_q               0x160c            dnsname2ip/u_dnsname2ip.o
+proc_schd_next      0x4               dnsname2ip/u_dnsname2ip.o
+package             0x4               ../../lib/adthas.a(dns_name2ip.o)
+
+Discarded input sections
+
+ .note.GNU-stack
+                0x0000000000000000        0x0 dnsname2ip/u_dnsname2ip.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 ../../lib/adthas.a(exit.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 ../../lib/adthas.a(enpage.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 ../../lib/adthas.a(dns_name2ip.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 ../../lib/adthas.a(sendmsg.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+Address of section .text set to 0x600000
+LOAD dnsname2ip/start.o
+LOAD dnsname2ip/u_dnsname2ip.o
+LOAD ../../lib/adthas.a
+                0x0000000008048000                PROVIDE (__executable_start, 0x8048000)
+                0x0000000008048094                . = (0x8048000 + SIZEOF_HEADERS)
+
+.interp
+ *(.interp)
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.hash
+ *(.hash)
+
+.gnu.hash
+ *(.gnu.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.dyn        0x0000000008048094        0x0
+ *(.rel.init)
+ *(.rel.text .rel.text.* .rel.gnu.linkonce.t.*)
+ .rel.text      0x0000000000000000        0x0 dnsname2ip/start.o
+ *(.rel.fini)
+ *(.rel.rodata .rel.rodata.* .rel.gnu.linkonce.r.*)
+ *(.rel.data.rel.ro* .rel.gnu.linkonce.d.rel.ro.*)
+ *(.rel.data .rel.data.* .rel.gnu.linkonce.d.*)
+ *(.rel.tdata .rel.tdata.* .rel.gnu.linkonce.td.*)
+ *(.rel.tbss .rel.tbss.* .rel.gnu.linkonce.tb.*)
+ *(.rel.ctors)
+ *(.rel.dtors)
+ *(.rel.got)
+ *(.rel.bss .rel.bss.* .rel.gnu.linkonce.b.*)
+ *(.rel.ifunc)
+
+.rel.plt        0x0000000008048094        0x0
+ *(.rel.plt)
+                0x0000000008048094                PROVIDE (__rel_iplt_start, .)
+ *(.rel.iplt)
+ .rel.iplt      0x0000000000000000        0x0 dnsname2ip/start.o
+                0x0000000008048094                PROVIDE (__rel_iplt_end, .)
+
+.init
+ *(.init)
+
+.plt            0x00000000080480a0        0x0
+ *(.plt)
+ *(.iplt)
+ .iplt          0x0000000000000000        0x0 dnsname2ip/start.o
+
+.text           0x0000000000600000      0x138
+ *(.text.unlikely .text.*_unlikely)
+ *(.text.exit .text.exit.*)
+ *(.text.startup .text.startup.*)
+ *(.text.hot .text.hot.*)
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ .text          0x0000000000600000       0x15 dnsname2ip/start.o
+                0x0000000000600000                _start
+ *fill*         0x0000000000600015        0x3 90909090
+ .text          0x0000000000600018       0x20 dnsname2ip/u_dnsname2ip.o
+                0x0000000000600018                main
+ .text          0x0000000000600038       0x2e ../../lib/adthas.a(exit.o)
+                0x0000000000600038                exit
+ *fill*         0x0000000000600066        0x2 90909090
+ .text          0x0000000000600068       0x2e ../../lib/adthas.a(enpage.o)
+                0x0000000000600068                enpage
+ *fill*         0x0000000000600096        0x2 90909090
+ .text          0x0000000000600098       0x2e ../../lib/adthas.a(dns_name2ip.o)
+                0x0000000000600098                dns_name2ip
+ *fill*         0x00000000006000c6        0x2 90909090
+ .text          0x00000000006000c8       0x19 ../../lib/adthas.a(sendmsg.o)
+                0x00000000006000c8                send_msg
+ *fill*         0x00000000006000e1        0xf 90909090
+ .text          0x00000000006000f0       0x48 ../../lib/adthas.a(syscalla.o)
+                0x00000000006000f0                send
+                0x00000000006000fc                forward
+                0x0000000000600108                receive
+                0x0000000000600114                setstatus
+                0x0000000000600120                prints
+                0x000000000060012c                setattr
+ *(.gnu.warning)
+
+.fini
+ *(.fini)
+                0x0000000000600138                PROVIDE (__etext, .)
+                0x0000000000600138                PROVIDE (_etext, .)
+                0x0000000000600138                PROVIDE (etext, .)
+
+.rodata
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+
+.rodata1
+ *(.rodata1)
+
+.eh_frame_hdr
+ *(.eh_frame_hdr)
+
+.eh_frame       0x0000000000600138       0xb8
+ *(.eh_frame)
+ .eh_frame      0x0000000000600138       0x38 dnsname2ip/u_dnsname2ip.o
+ .eh_frame      0x0000000000600170       0x20 ../../lib/adthas.a(exit.o)
+                                         0x38 (size before relaxing)
+ .eh_frame      0x0000000000600190       0x20 ../../lib/adthas.a(enpage.o)
+                                         0x38 (size before relaxing)
+ .eh_frame      0x00000000006001b0       0x20 ../../lib/adthas.a(dns_name2ip.o)
+                                         0x38 (size before relaxing)
+ .eh_frame      0x00000000006001d0       0x20 ../../lib/adthas.a(sendmsg.o)
+                                         0x38 (size before relaxing)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.exception_ranges
+ *(.exception_ranges .exception_ranges*)
+                0x00000000006001f0                . = (ALIGN (0x1000) - ((0x1000 - .) & 0xfff))
+                0x00000000006011f0                . = DATA_SEGMENT_ALIGN (0x1000, 0x1000)
+
+.eh_frame
+ *(.eh_frame)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.exception_ranges
+ *(.exception_ranges .exception_ranges*)
+
+.tdata
+ *(.tdata .tdata.* .gnu.linkonce.td.*)
+
+.tbss
+ *(.tbss .tbss.* .gnu.linkonce.tb.*)
+ *(.tcommon)
+
+.preinit_array  0x00000000006011f0        0x0
+                0x00000000006011f0                PROVIDE (__preinit_array_start, .)
+ *(.preinit_array)
+                0x00000000006011f0                PROVIDE (__preinit_array_end, .)
+
+.init_array     0x00000000006011f0        0x0
+                0x00000000006011f0                PROVIDE (__init_array_start, .)
+ *(SORT(.init_array.*) SORT(.ctors.*))
+ *(.init_array)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .ctors)
+                0x00000000006011f0                PROVIDE (__init_array_end, .)
+
+.fini_array     0x00000000006011f0        0x0
+                0x00000000006011f0                PROVIDE (__fini_array_start, .)
+ *(SORT(.fini_array.*) SORT(.dtors.*))
+ *(.fini_array)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .dtors)
+                0x00000000006011f0                PROVIDE (__fini_array_end, .)
+
+.ctors
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .ctors)
+ *(SORT(.ctors.*))
+ *(.ctors)
+
+.dtors
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors)
+ *(SORT(.dtors.*))
+ *(.dtors)
+
+.jcr
+ *(.jcr)
+
+.data.rel.ro
+ *(.data.rel.ro.local* .gnu.linkonce.d.rel.ro.local.*)
+ *(.data.rel.ro* .gnu.linkonce.d.rel.ro.*)
+
+.dynamic
+ *(.dynamic)
+
+.got
+ *(.got)
+ *(.igot)
+                0x00000000006011f0                . = DATA_SEGMENT_RELRO_END (., 0xc)
+
+.got.plt        0x00000000006011f0        0x0
+ *(.got.plt)
+ *(.igot.plt)
+ .igot.plt      0x0000000000000000        0x0 dnsname2ip/start.o
+
+.data           0x00000000006011f0        0x0
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data          0x00000000006011f0        0x0 dnsname2ip/u_dnsname2ip.o
+ .data          0x00000000006011f0        0x0 ../../lib/adthas.a(exit.o)
+ .data          0x00000000006011f0        0x0 ../../lib/adthas.a(enpage.o)
+ .data          0x00000000006011f0        0x0 ../../lib/adthas.a(dns_name2ip.o)
+ .data          0x00000000006011f0        0x0 ../../lib/adthas.a(sendmsg.o)
+
+.data1
+ *(.data1)
+                0x00000000006011f0                _edata = .
+                0x00000000006011f0                PROVIDE (edata, .)
+                0x00000000006011f0                __bss_start = .
+
+.bss            0x0000000000601200     0x1638
+ *(.dynbss)
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x0000000000601200        0x0 dnsname2ip/u_dnsname2ip.o
+ .bss           0x0000000000601200        0x0 ../../lib/adthas.a(exit.o)
+ .bss           0x0000000000601200        0x0 ../../lib/adthas.a(enpage.o)
+ .bss           0x0000000000601200        0x0 ../../lib/adthas.a(dns_name2ip.o)
+ .bss           0x0000000000601200        0x0 ../../lib/adthas.a(sendmsg.o)
+ *(COMMON)
+ COMMON         0x0000000000601200     0x1630 dnsname2ip/u_dnsname2ip.o
+                0x0000000000601200                p_recv_nbuf
+                0x0000000000601204                p_tmp_data
+                0x0000000000601208                wait_schd_tick
+                0x000000000060120c                p_send_nbuf
+                0x0000000000601210                p_msg_stack
+                0x0000000000601220                msg_q
+                0x000000000060282c                proc_schd_next
+ COMMON         0x0000000000602830        0x8 ../../lib/adthas.a(dns_name2ip.o)
+                0x0000000000602830                p_net_stack
+                0x0000000000602834                package
+                0x0000000000602838                . = ALIGN ((. != 0x0)?0x4:0x1)
+                0x0000000000602838                . = ALIGN (0x4)
+                0x0000000000602838                . = ALIGN (0x4)
+                0x0000000000602838                _end = .
+                0x0000000000602838                PROVIDE (end, .)
+                0x0000000000602838                . = DATA_SEGMENT_END (.)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x2a
+ *(.comment)
+ .comment       0x0000000000000000       0x2a dnsname2ip/u_dnsname2ip.o
+                                         0x2b (size before relaxing)
+ .comment       0x0000000000000000       0x2b ../../lib/adthas.a(exit.o)
+ .comment       0x0000000000000000       0x2b ../../lib/adthas.a(enpage.o)
+ .comment       0x0000000000000000       0x2b ../../lib/adthas.a(dns_name2ip.o)
+ .comment       0x0000000000000000       0x2b ../../lib/adthas.a(sendmsg.o)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info .gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.gnu.attributes
+ *(.gnu.attributes)
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+ *(.gnu.lto_*)
+OUTPUT(../dns/dnsname2ip elf32-i386)

@@ -1,0 +1,1848 @@
+Archive member included because of file (symbol)
+
+src/lib/adthas.a(string.o)    src/fs/dts/fs.o (strcopy)
+src/lib/adthas.a(libc.o)      src/net/ftp/ftp_cmd.o (i2s)
+src/lib/adthas.a(mkdir.o)     src/net/tftp/tftp.o (mkdir)
+src/lib/adthas.a(mkfile.o)    src/net/tftp/tftp.o (mkfile)
+src/lib/adthas.a(cat.o)       src/net/ftp/ftp.o (cat)
+src/lib/adthas.a(getmsg.o)    src/tty/tty.o (get_msg)
+src/lib/adthas.a(sendmsg.o)   src/tty/tty.o (send_msg)
+src/lib/adthas.a(read.o)      src/uproc/ucrt.o (read)
+src/lib/adthas.a(libsys.o)    src/tty/tty.o (cpid)
+src/lib/adthas.a(syscalla.o)  src/lib/adthas.a(sendmsg.o) (send)
+src/lib/adthas.a(ulib.o)      src/lib/adthas.a(libsys.o) (u_desc_baseaddr_get)
+src/lib/adthas.a(write.o)     src/uproc/page.o (write)
+src/lib/adthas.a(readb.o)     src/uproc/page.o (readb)
+src/lib/adthas.a(printk.o)    src/fs/dts/fs.o (printk)
+src/lib/adthas.a(libn.o)      src/net/icmp.o (makechksum)
+
+Allocating common symbols
+Common symbol       size              file
+
+flg_ftp_user        0x1               src/kernel/proc.o
+http_fun            0x4               src/net/http/http.o
+p_tty_stack         0x4               src/kernel/proc.o
+p_sys_stack         0x4               src/kernel/proc.o
+tty_stack           0x2000            src/tty/tty.o
+shdinfo             0x44              src/hd/hd.o
+p_tcp_daemon_stack  0x4               src/kernel/proc.o
+ftp_control_seq     0x4               src/kernel/proc.o
+p_recv_nbuf         0x4               src/kernel/proc.o
+flg_ftp_filests     0x1               src/kernel/proc.o
+p_ppop3_state       0x4               src/kernel/proc.o
+p_state_code        0x4               src/kernel/proc.o
+p_dhcp_state_tab    0x4               src/kernel/proc.o
+p_test2_stack       0x4               src/kernel/proc.o
+p_snmp_stack        0x4               src/kernel/proc.o
+dns_state           0x4               src/kernel/proc.o
+sysrtime_sec        0x4               src/kernel/proc.o
+ack                 0x4               src/net/net.o
+flg_telnet_client   0x1               src/kernel/proc.o
+p_test3_stack       0x4               src/kernel/proc.o
+p_hhttp_stack       0x4               src/kernel/proc.o
+msg_tcpd            0x2f80c           src/kernel/proc.o
+connect_seq         0x4               src/net/net.o
+hd_vem_map          0x4               src/kernel/proc.o
+flg_int             0x1               src/kernel/proc.o
+p_ip_format         0x4               src/kernel/proc.o
+dhcp_state          0x4               src/kernel/proc.o
+pop3_fun            0x4               src/net/pop3/pop3.o
+net_stack           0x2000            src/net/net.o
+flg_ftp_data_end    0x1               src/kernel/proc.o
+p_fs_stack          0x4               src/kernel/proc.o
+pop3_state          0x4               src/kernel/proc.o
+smtp_state          0x4               src/kernel/proc.o
+ftp_control_port    0x2               src/kernel/proc.o
+sys_rtime           0x4               src/kernel/proc.o
+p_test1_stack       0x4               src/kernel/proc.o
+flg_ftp_login       0x1               src/kernel/proc.o
+flg_pop3_client     0x1               src/kernel/proc.o
+sys_stack           0x2000            src/sys/sys.o
+p_telnet_cmd        0x4               src/kernel/proc.o
+p_domain_name_format
+                    0x4               src/kernel/proc.o
+dhcp_stack          0x2000            src/net/dhcp/dhcp.o
+telnet_dest_ip      0x4               src/net/telnet/telnet.o
+vfs                 0x4               src/kernel/proc.o
+p_ftp_stack         0x4               src/kernel/proc.o
+flg_ftp_type        0x1               src/kernel/proc.o
+p_snmp_state_tab    0x4               src/kernel/proc.o
+smtp_dest_ip        0x4               src/net/smtp/smtp.o
+ftp_stack           0x2000            src/net/ftp/ftp.o
+pnet_dev            0x4               src/kernel/proc.o
+req_ip              0x4               src/kernel/proc.o
+p_tftp_stack        0x4               src/kernel/proc.o
+data_size_total_bytes
+                    0x4               src/kernel/proc.o
+p_tmp_data          0x4               src/kernel/proc.o
+snmp_stack          0x2000            src/net/snmp/snmp.o
+p_tcp_state_tab     0x4               src/net/net.o
+p_smtp_cmd          0x4               src/kernel/proc.o
+snmp_state          0x4               src/kernel/proc.o
+proc_tab            0x5aa0            src/kernel/proc.o
+p_ddhcp_stack       0x4               src/kernel/proc.o
+p_domain_name       0x4               src/kernel/proc.o
+ftp_control_state   0x1               src/kernel/proc.o
+p_pop3_cmd          0x4               src/kernel/proc.o
+dest_ip             0x4               src/net/http/http.o
+p_server_smtp_cmd   0x4               src/kernel/proc.o
+p_smtp_state_tab    0x4               src/kernel/proc.o
+http_state          0x4               src/kernel/proc.o
+tcp_state           0x4               src/net/net.o
+flg_ftp_port        0x1               src/kernel/proc.o
+fsbuf               0x1000            src/kernel/proc.o
+wait_schd_tick      0x4               src/kernel/8259a.o
+smtp_stack          0x2000            src/net/smtp/smtp.o
+send_buf_start_addr
+                    0x4               src/kernel/proc.o
+tcp_daemon_stack    0x2000            src/net/tcp/tcp_daemon.o
+flg_ftp_ls          0x1               src/kernel/proc.o
+p_tftp_state_tab    0x4               src/kernel/proc.o
+tftp_stack          0x2000            src/net/tftp/tftp.o
+tmp_ospf_data       0x5c8             src/net/dy_routes.o
+u_fs                0x30              src/kernel/proc.o
+fs_stack            0x2000            src/fs/vfs.o
+smtp_fun            0x4               src/net/smtp/smtp.o
+sys_ntime           0x4               src/kernel/proc.o
+p_uproc_stack       0x4               src/kernel/proc.o
+client_port         0x2               src/net/net.o
+p_telnet_state_tab  0x4               src/kernel/proc.o
+p_telnet_stack      0x4               src/kernel/proc.o
+p_hhttp_state_tab   0x4               src/kernel/proc.o
+flg_ftp_put         0x1               src/kernel/proc.o
+tftp_state          0x4               src/kernel/proc.o
+flg_ftp_syst        0x1               src/kernel/proc.o
+g_trans_id          0x4               src/kernel/proc.o
+telnet_state        0x4               src/kernel/proc.o
+p_http_method       0x4               src/kernel/proc.o
+seq                 0x4               src/net/net.o
+uproc_stack         0x2000            src/uproc/uproc.o
+dns_stack           0x2000            src/net/dns/dns.o
+p_dns_stack         0x4               src/kernel/proc.o
+pop3_stack          0x2000            src/net/pop3/pop3.o
+iden_server_ip      0x4               src/kernel/proc.o
+connect_ack         0x4               src/net/net.o
+p_smtp_stack        0x4               src/kernel/proc.o
+p_send_nbuf         0x4               src/kernel/proc.o
+mem_stratigic       0x1               src/kernel/proc.o
+sysntime_sec        0x4               src/kernel/proc.o
+msg_stack           0x2000            src/mesg/mesg.o
+ftp_control_ack     0x4               src/kernel/proc.o
+telnet_fun          0x4               src/net/telnet/telnet.o
+part                0x4               src/kernel/proc.o
+sys_routetbl        0x4               src/net/icmp.o
+flg_ftp_get         0x1               src/kernel/proc.o
+p_hd_stack          0x4               src/kernel/proc.o
+p_msg_stack         0x4               src/kernel/proc.o
+pcidev              0x4               src/pci/pci.o
+p_net_stack         0x4               src/kernel/proc.o
+p_pop3_stack        0x4               src/kernel/proc.o
+flg_ftp_quit        0x1               src/kernel/proc.o
+p_pop3_state_tab    0x4               src/kernel/proc.o
+msg_q               0x160c            src/kernel/proc.o
+telnet_stack        0x2000            src/net/telnet/telnet.o
+hdbuf               0x1000            src/kernel/proc.o
+proc_schd_next      0x4               src/kernel/8259a.o
+recv_buf_start_addr
+                    0x4               src/kernel/proc.o
+pop3_dest_ip        0x4               src/net/pop3/pop3.o
+proc_ready          0x4               src/kernel/proc.o
+flg_client          0x1               src/kernel/proc.o
+vem_map             0x20              src/uproc/uproc.o
+hd_stack            0x2000            src/hd/hd.o
+npkg                0x5ec             src/net/rtl8029.o
+p_mailname          0x4               src/kernel/proc.o
+package             0x4               src/kernel/proc.o
+cmdl                0x4               src/kernel/proc.o
+flg_ftp_pass        0x1               src/kernel/proc.o
+flg_ftp_data_start  0x1               src/kernel/proc.o
+flg_ftp_close       0x1               src/kernel/proc.o
+http_stack          0x2000            src/net/http/http.o
+p_ssmtp_state       0x4               src/kernel/proc.o
+p_telnet_state      0x4               src/kernel/proc.o
+p_dns_state_tab     0x4               src/kernel/proc.o
+ftp_data_port       0x2               src/kernel/proc.o
+
+Discarded input sections
+
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/kernel/8259a.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/kernel/proc.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/kernel/clock.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/kernel/signal.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/kernel/syscallc.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/mesg/mesg.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/keyboard/keyboard.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/tty/tty.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/hd/hd.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/fs/dts/fs.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/fs/vfs.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/hd/hd_manager.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/fs/vfslib.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/hd/partition.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/sys/sys.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/sys/time.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/uproc/uproc.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/uproc/ucrt.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/uproc/mem_manage.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/uproc/page.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/pci/pci.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/net/net.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/net/rtl8029.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/net/ethernet.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/net/frame.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/net/icmp.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/net/ipv4.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/net/route.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/net/traceroutes.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/net/udp.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/net/dy_routes.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/net/igmp.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/net/tcp/tcp.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/net/ftp/ftp.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/net/ftp/ftp_lib.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/net/ftp/ftp_cmd.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/net/tcp/tcp_daemon.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/net/dhcp/dhcp.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/net/dhcp/dhcp_lib.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/net/tftp/tftp.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/net/tftp/tftp_lib.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/net/dns/dns.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/net/dns/dns_lib.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/net/snmp/snmp.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/net/snmp/snmp_lib.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/net/http/http.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/net/http/http_lib.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/net/http/http_cmd.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/net/smtp/smtp.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/net/smtp/smtp_client.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/net/smtp/smtp_cmd.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/net/smtp/smtp_server.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/net/pop3/pop3.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/net/pop3/pop3_client.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/net/pop3/pop3_cmd.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/net/pop3/pop3_server.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/net/telnet/telnet.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/net/telnet/telnet_client.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/net/telnet/telnet_cmd.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/net/telnet/telnet_server.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/lib/adthas.a(string.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/lib/adthas.a(libc.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/lib/adthas.a(mkdir.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/lib/adthas.a(mkfile.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/lib/adthas.a(cat.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/lib/adthas.a(getmsg.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/lib/adthas.a(sendmsg.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/lib/adthas.a(read.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/lib/adthas.a(libsys.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/lib/adthas.a(write.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/lib/adthas.a(readb.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/lib/adthas.a(printk.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/lib/adthas.a(libn.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+Address of section .text set to 0xc0000000
+LOAD src/kernel/krl.o
+LOAD src/kernel/8259a.o
+LOAD src/kernel/klib.o
+LOAD src/kernel/proc.o
+LOAD src/kernel/clock.o
+LOAD src/kernel/signal.o
+LOAD src/kernel/syscallc.o
+LOAD src/mesg/mesg.o
+LOAD src/keyboard/keyboard.o
+LOAD src/tty/tty.o
+LOAD src/hd/hd.o
+LOAD src/fs/dts/fs.o
+LOAD src/fs/vfs.o
+LOAD src/hd/hd_manager.o
+LOAD src/fs/vfslib.o
+LOAD src/hd/partition.o
+LOAD src/sys/sys.o
+LOAD src/sys/time.o
+LOAD src/uproc/uproc.o
+LOAD src/uproc/ucrt.o
+LOAD src/uproc/mem_manage.o
+LOAD src/uproc/page.o
+LOAD src/pci/pci.o
+LOAD src/net/net.o
+LOAD src/net/rtl8029.o
+LOAD src/net/ethernet.o
+LOAD src/net/frame.o
+LOAD src/net/icmp.o
+LOAD src/net/ipv4.o
+LOAD src/net/route.o
+LOAD src/net/traceroutes.o
+LOAD src/net/udp.o
+LOAD src/net/dy_routes.o
+LOAD src/net/igmp.o
+LOAD src/net/tcp/tcp.o
+LOAD src/net/ftp/ftp.o
+LOAD src/net/ftp/ftp_lib.o
+LOAD src/net/ftp/ftp_cmd.o
+LOAD src/net/tcp/tcp_daemon.o
+LOAD src/net/dhcp/dhcp.o
+LOAD src/net/dhcp/dhcp_lib.o
+LOAD src/net/tftp/tftp.o
+LOAD src/net/tftp/tftp_lib.o
+LOAD src/net/dns/dns.o
+LOAD src/net/dns/dns_lib.o
+LOAD src/net/snmp/snmp.o
+LOAD src/net/snmp/snmp_lib.o
+LOAD src/net/http/http.o
+LOAD src/net/http/http_lib.o
+LOAD src/net/http/http_cmd.o
+LOAD src/net/smtp/smtp.o
+LOAD src/net/smtp/smtp_client.o
+LOAD src/net/smtp/smtp_cmd.o
+LOAD src/net/smtp/smtp_server.o
+LOAD src/net/pop3/pop3.o
+LOAD src/net/pop3/pop3_client.o
+LOAD src/net/pop3/pop3_cmd.o
+LOAD src/net/pop3/pop3_server.o
+LOAD src/net/telnet/telnet.o
+LOAD src/net/telnet/telnet_client.o
+LOAD src/net/telnet/telnet_cmd.o
+LOAD src/net/telnet/telnet_server.o
+LOAD src/lib/adthas.a
+                0x0000000008048000                PROVIDE (__executable_start, 0x8048000)
+                0x0000000008048094                . = (0x8048000 + SIZEOF_HEADERS)
+
+.interp
+ *(.interp)
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.hash
+ *(.hash)
+
+.gnu.hash
+ *(.gnu.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.dyn        0x0000000008048094        0x0
+ *(.rel.init)
+ *(.rel.text .rel.text.* .rel.gnu.linkonce.t.*)
+ .rel.text      0x0000000000000000        0x0 src/kernel/krl.o
+ *(.rel.fini)
+ *(.rel.rodata .rel.rodata.* .rel.gnu.linkonce.r.*)
+ *(.rel.data.rel.ro* .rel.gnu.linkonce.d.rel.ro.*)
+ *(.rel.data .rel.data.* .rel.gnu.linkonce.d.*)
+ .rel.data      0x0000000000000000        0x0 src/kernel/krl.o
+ *(.rel.tdata .rel.tdata.* .rel.gnu.linkonce.td.*)
+ *(.rel.tbss .rel.tbss.* .rel.gnu.linkonce.tb.*)
+ *(.rel.ctors)
+ *(.rel.dtors)
+ *(.rel.got)
+ *(.rel.bss .rel.bss.* .rel.gnu.linkonce.b.*)
+ *(.rel.ifunc)
+
+.rel.plt        0x0000000008048094        0x0
+ *(.rel.plt)
+                0x0000000008048094                PROVIDE (__rel_iplt_start, .)
+ *(.rel.iplt)
+ .rel.iplt      0x0000000000000000        0x0 src/kernel/krl.o
+                0x0000000008048094                PROVIDE (__rel_iplt_end, .)
+
+.init
+ *(.init)
+
+.plt            0x00000000080480a0        0x0
+ *(.plt)
+ *(.iplt)
+ .iplt          0x0000000000000000        0x0 src/kernel/krl.o
+
+.text           0x00000000c0000000    0x2071a
+ *(.text.unlikely .text.*_unlikely)
+ *(.text.exit .text.exit.*)
+ *(.text.startup .text.startup.*)
+ *(.text.hot .text.hot.*)
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ .text          0x00000000c0000000      0xa80 src/kernel/krl.o
+                0x00000000c0000000                _start
+                0x00000000c00000e3                restore
+                0x00000000c000011b                idt_setting
+                0x00000000c00004ff                idt_divide_handler
+                0x00000000c0000511                idt_debug_handler
+                0x00000000c0000523                idt_n_mask_handler
+                0x00000000c0000535                idt_breakpoint_handler
+                0x00000000c0000547                idt_overflow_handler
+                0x00000000c0000559                idt_bound_handler
+                0x00000000c000056b                idt_invalid_handler
+                0x00000000c000058f                idt_double_fault_handler
+                0x00000000c00005a1                idt_process_bound_handler
+                0x00000000c00005b3                idt_tss_handler
+                0x00000000c00005c5                idt_segment_handler
+                0x00000000c00005d7                idt_stack_handler
+                0x00000000c00005e9                idt_protect_handler
+                0x00000000c00005fb                idt_page_handler
+                0x00000000c0000619                idt_intel_preseve_handler
+                0x00000000c000062b                idt_fpu_handler
+                0x00000000c000063d                idt_alignment_handler
+                0x00000000c000064f                idt_machine_check_handler
+                0x00000000c0000661                idt_simd_handler
+                0x00000000c0000673                idt_irq0_handler
+                0x00000000c00006be                idt_irq1_handler
+                0x00000000c0000709                idt_irq2_handler
+                0x00000000c0000718                idt_irq3_handler
+                0x00000000c0000727                idt_irq4_handler
+                0x00000000c0000736                idt_irq5_handler
+                0x00000000c0000745                idt_irq6_handler
+                0x00000000c0000754                idt_irq7_handler
+                0x00000000c0000763                idt_irq8_handler
+                0x00000000c0000772                idt_irq9_handler
+                0x00000000c00007bf                idt_irq10_handler
+                0x00000000c00007ce                idt_irq11_handler
+                0x00000000c00007fb                idt_irq14_handler
+                0x00000000c0000848                idt_irq15_handler
+                0x00000000c0000857                idt_desc_setting
+                0x00000000c0000893                gdt_desc_setting
+                0x00000000c0000a3c                syscall_
+ .text          0x00000000c0000a80       0xe2 src/kernel/8259a.o
+                0x00000000c0000a80                init_8259a
+ *fill*         0x00000000c0000b62        0xe 90909090
+ .text          0x00000000c0000b70      0x476 src/kernel/klib.o
+                0x00000000c0000b70                disp_num
+                0x00000000c0000c49                disp_sym
+                0x00000000c0000c6e                disp_str
+                0x00000000c0000c96                disp_dword
+                0x00000000c0000d0f                out_32
+                0x00000000c0000d1c                in_32
+                0x00000000c0000d27                in_16
+                0x00000000c0000d33                out_16
+                0x00000000c0000d41                out_8
+                0x00000000c0000d4e                in_8
+                0x00000000c0000d59                mcopy
+                0x00000000c0000d81                en_irq
+                0x00000000c0000db9                dis_irq
+                0x00000000c0000de9                dis_int
+                0x00000000c0000deb                en_int
+                0x00000000c0000ded                desc_setting
+                0x00000000c0000e22                desc_baseaddr_get
+                0x00000000c0000e57                phycopy
+                0x00000000c0000e7d                gethddata
+                0x00000000c0000ea6                puthddata
+                0x00000000c0000ecf                sys_enpage
+                0x00000000c0000ed9                page_set
+                0x00000000c0000f68                upd_gdt_descs_user
+                0x00000000c0000fdd                reboot
+ *fill*         0x00000000c0000fe6        0x2 90909090
+ .text          0x00000000c0000fe8      0xacb src/kernel/proc.o
+                0x00000000c0000fe8                init_proc
+                0x00000000c0001354                init_sys_proc
+                0x00000000c00015b2                init_user_proc
+                0x00000000c000181a                init_default_proc
+                0x00000000c0001a67                laddr_to_paddr
+                0x00000000c0001a8b                paddr_to_laddr
+ *fill*         0x00000000c0001ab3        0x1 90909090
+ .text          0x00000000c0001ab4      0x229 src/kernel/clock.o
+                0x00000000c0001ab4                init_clock
+                0x00000000c0001b20                clock_driver
+                0x00000000c0001ba1                schd
+ *fill*         0x00000000c0001cdd        0x3 90909090
+ .text          0x00000000c0001ce0      0x65a src/kernel/signal.o
+                0x00000000c0001ce0                sig_process
+                0x00000000c0001fdd                sigkill
+                0x00000000c000206c                en_sig
+                0x00000000c00020fc                dis_sig
+                0x00000000c0002189                clear_sig
+                0x00000000c0002219                set_sig
+                0x00000000c00022a6                sig_mask_check
+ *fill*         0x00000000c000233a        0x2 90909090
+ .text          0x00000000c000233c        0x0 src/kernel/syscallc.o
+ .text          0x00000000c000233c      0x384 src/mesg/mesg.o
+                0x00000000c000233c                init_mesg
+                0x00000000c0002393                mesg_main
+                0x00000000c00023fb                out_queue
+                0x00000000c000245b                in_queue
+                0x00000000c000251e                sys_send
+                0x00000000c00025d2                sys_forward
+                0x00000000c0002632                sys_receive
+ .text          0x00000000c00026c0     0x1be4 src/keyboard/keyboard.o
+                0x00000000c00026c0                keyb_handler
+                0x00000000c0002726                init_keyb
+                0x00000000c0002774                keyb_read
+                0x00000000c00027cc                char_exec
+ .text          0x00000000c00042a4      0xfc7 src/tty/tty.o
+                0x00000000c00042a4                init_tty
+                0x00000000c00045bc                tty_main
+                0x00000000c000463e                tty_read
+                0x00000000c000464b                tty_write
+                0x00000000c00046b4                tty_buf_write
+                0x00000000c000472e                print_char
+                0x00000000c0004a6f                clear_screen
+                0x00000000c0004aa9                scroll_down
+                0x00000000c0004b17                scroll_up
+                0x00000000c0004b8a                reset_cursor
+                0x00000000c0004c00                reset_video
+                0x00000000c0004c69                tab_exec
+                0x00000000c0004c90                backspace_exec
+                0x00000000c0004d0b                delete_exec
+                0x00000000c0004d6c                enter_exec
+                0x00000000c0004f0a                direction_exec
+                0x00000000c0005069                home_exec
+                0x00000000c00050c0                end_exec
+                0x00000000c000511e                change_tty
+                0x00000000c00051b5                reset_cmdlb
+                0x00000000c00051d6                sys_puts
+                0x00000000c000520c                sys_prints
+ *fill*         0x00000000c000526b        0x1 90909090
+ .text          0x00000000c000526c      0x5ed src/hd/hd.o
+                0x00000000c000526c                hd_main
+                0x00000000c000533d                init_hd
+                0x00000000c0005385                hd_read_blk
+                0x00000000c000542e                hd_write_blk
+                0x00000000c00055a9                get_hd_info
+                0x00000000c000575b                print_hd_info
+                0x00000000c000581e                harddisk_driver
+                0x00000000c0005837                waitfor_int
+ *fill*         0x00000000c0005859        0x3 90909090
+ .text          0x00000000c000585c     0x1ad8 src/fs/dts/fs.o
+                0x00000000c000585c                dts_get_fstab
+                0x00000000c0005866                dts_get_inode
+                0x00000000c0005c82                dts_get_super_blk
+                0x00000000c0005cee                dts_add_inode
+                0x00000000c0005e26                dts_add_block
+                0x00000000c00060de                dts_add_imap_bit
+                0x00000000c0006363                dts_add_bmap_bit
+                0x00000000c00064e7                dts_add_dir_ent
+                0x00000000c00065c8                dts_del_inode
+                0x00000000c00066ef                dts_del_block
+                0x00000000c00069ea                dts_del_imap_bit
+                0x00000000c0006c8a                dts_del_bmap_bit
+                0x00000000c0006f0b                dts_del_dir_ent
+                0x00000000c0006fff                dts_update_inode
+ .text          0x00000000c0007334      0xca1 src/fs/vfs.o
+                0x00000000c0007334                vfs_main
+                0x00000000c0007473                init_vfs
+                0x00000000c00074a1                vfs_open
+                0x00000000c0007864                vfs_test
+                0x00000000c0007869                sys_mkdir
+                0x00000000c0007993                sys_mkfile
+                0x00000000c0007abd                sys_rmdir
+                0x00000000c0007be7                sys_rmfile
+                0x00000000c0007d11                sys_ls
+                0x00000000c0007ded                sys_cat
+                0x00000000c0007eeb                sys_read
+                0x00000000c0007f82                sys_cd
+                0x00000000c0007faf                sys_pwd
+ *fill*         0x00000000c0007fd5        0x3 90909090
+ .text          0x00000000c0007fd8      0x3f3 src/hd/hd_manager.o
+                0x00000000c0007fd8                init_hd_freelist
+                0x00000000c00081f2                alloc_block
+                0x00000000c00082eb                free_block
+                0x00000000c0008347                printflist
+ *fill*         0x00000000c00083cb        0x1 90909090
+ .text          0x00000000c00083cc     0x1c68 src/fs/vfslib.o
+                0x00000000c00083cc                k_mkinode
+                0x00000000c00084c5                k_rminode
+                0x00000000c00085bf                k_fopen
+                0x00000000c00085eb                k_fwrite
+                0x00000000c0008cfc                k_fappend
+                0x00000000c0009838                k_fread
+                0x00000000c0009d3c                k_ls
+                0x00000000c0009fc2                k_cd
+                0x00000000c000a005                k_pwd
+ .text          0x00000000c000a034      0x1f2 src/hd/partition.o
+                0x00000000c000a034                init_part
+                0x00000000c000a043                print_part_info
+ *fill*         0x00000000c000a226        0x2 90909090
+ .text          0x00000000c000a228      0x403 src/sys/sys.o
+                0x00000000c000a228                sys_main
+                0x00000000c000a300                init_sys
+                0x00000000c000a329                sys_status
+                0x00000000c000a35b                sys_attr
+                0x00000000c000a404                print_dir
+                0x00000000c000a42a                change_dir
+                0x00000000c000a544                sleep
+                0x00000000c000a587                wakeup
+                0x00000000c000a5bd                block
+                0x00000000c000a5f4                unblock
+ *fill*         0x00000000c000a62b        0x1 90909090
+ .text          0x00000000c000a62c      0x648 src/sys/time.o
+                0x00000000c000a62c                systime_init
+                0x00000000c000aa36                systime_set
+                0x00000000c000ac42                delay_sec
+ .text          0x00000000c000ac74      0x42a src/uproc/uproc.o
+                0x00000000c000ac74                init_uproc
+                0x00000000c000acc7                init_shell
+                0x00000000c000ad16                uproc_main
+                0x00000000c000adf3                reset_cmdlineT
+                0x00000000c000ae29                sys_reset_cmdline
+                0x00000000c000ae7f                cmd_exec
+                0x00000000c000af8b                stack_setup
+                0x00000000c000b01a                stack_print
+ *fill*         0x00000000c000b09e        0x2 90909090
+ .text          0x00000000c000b0a0      0x7d7 src/uproc/ucrt.o
+                0x00000000c000b0a0                sys_fork
+                0x00000000c000b0dd                sys_exit
+                0x00000000c000b25c                sys_execl
+ *fill*         0x00000000c000b877        0x1 90909090
+ .text          0x00000000c000b878      0x339 src/uproc/mem_manage.o
+                0x00000000c000b878                init_mem_freelist
+                0x00000000c000b8c6                print_memflist
+                0x00000000c000b91e                sys_alloc
+                0x00000000c000ba16                sys_free
+                0x00000000c000baca                sys_valloc
+ *fill*         0x00000000c000bbb1        0x3 90909090
+ .text          0x00000000c000bbb4      0x10d src/uproc/page.o
+                0x00000000c000bbb4                page_driver
+                0x00000000c000bbc7                swapin
+                0x00000000c000bc98                swapout
+ *fill*         0x00000000c000bcc1        0x3 90909090
+ .text          0x00000000c000bcc4      0x220 src/pci/pci.o
+                0x00000000c000bcc4                init_pci
+                0x00000000c000bcf5                pci_scan
+                0x00000000c000be0c                pci_disp
+ .text          0x00000000c000bee4      0x8c2 src/net/net.o
+                0x00000000c000bee4                init_net
+                0x00000000c000bf08                net_main
+                0x00000000c000c15c                pkg_process
+ *fill*         0x00000000c000c7a6        0x2 90909090
+ .text          0x00000000c000c7a8      0xce6 src/net/rtl8029.o
+                0x00000000c000c7a8                init_rtl8029
+                0x00000000c000c8cc                rtl8029_handler
+                0x00000000c000cdf6                rtl8029_send_pkg
+                0x00000000c000d056                rtl8029_receive_pkg
+ *fill*         0x00000000c000d48e        0x2 90909090
+ .text          0x00000000c000d490      0x1a3 src/net/ethernet.o
+                0x00000000c000d490                init_ethernet
+                0x00000000c000d533                pr_ethernet
+ *fill*         0x00000000c000d633        0x1 90909090
+ .text          0x00000000c000d634      0x3dd src/net/frame.o
+                0x00000000c000d634                build_frame
+                0x00000000c000d81b                add_frame_header
+                0x00000000c000d8bd                build_test_frame
+ *fill*         0x00000000c000da11        0x3 90909090
+ .text          0x00000000c000da14      0x3f7 src/net/icmp.o
+                0x00000000c000da14                icmp_process
+                0x00000000c000dac7                icmp_echoreply
+                0x00000000c000dc56                icmp_timereply
+ *fill*         0x00000000c000de0b        0x1 90909090
+ .text          0x00000000c000de0c      0x5d2 src/net/ipv4.o
+                0x00000000c000de0c                add_ipv4_header
+                0x00000000c000df23                ip_forward_v4
+                0x00000000c000e010                ip_process
+                0x00000000c000e04e                ipv4_process
+                0x00000000c000e2c5                ipv4_send
+ *fill*         0x00000000c000e3de        0x2 90909090
+ .text          0x00000000c000e3e0      0xb94 src/net/route.o
+                0x00000000c000e3e0                init_routetbl
+                0x00000000c000e660                add_route
+                0x00000000c000e7cf                del_route
+                0x00000000c000e93e                search_route
+                0x00000000c000e9d2                get_routemac
+                0x00000000c000ec0e                update_routetable
+                0x00000000c000ec71                is_same_net
+                0x00000000c000ed6d                get_default_gw
+                0x00000000c000edbe                pr_routetbl
+ .text          0x00000000c000ef74      0x17e src/net/traceroutes.o
+                0x00000000c000ef74                sys_traceroute
+ *fill*         0x00000000c000f0f2        0x2 90909090
+ .text          0x00000000c000f0f4      0x15d src/net/udp.o
+                0x00000000c000f0f4                add_udp_header
+ *fill*         0x00000000c000f251        0x3 90909090
+ .text          0x00000000c000f254      0x8da src/net/dy_routes.o
+                0x00000000c000f254                dyroutes_process
+                0x00000000c000f2e8                rip1_process
+                0x00000000c000f4ba                rip2_process
+                0x00000000c000f6b0                ospf2_process
+                0x00000000c000f9ca                bgp_process
+ *fill*         0x00000000c000fb2e        0x2 90909090
+ .text          0x00000000c000fb30      0x1a9 src/net/igmp.o
+                0x00000000c000fb30                igmp_process
+                0x00000000c000fb65                igmp3_process
+ *fill*         0x00000000c000fcd9        0x3 90909090
+ .text          0x00000000c000fcdc      0x820 src/net/tcp/tcp.o
+                0x00000000c000fcdc                add_tcp_header
+                0x00000000c000ff03                init_tcp
+                0x00000000c00100ac                tcp_process
+                0x00000000c00104e4                get_seq
+ .text          0x00000000c00104fc      0xa05 src/net/ftp/ftp.o
+                0x00000000c00104fc                init_ftp
+                0x00000000c00105a0                ftp_main
+                0x00000000c00107de                ftp_ctrl_process
+                0x00000000c0010bac                ftp_data_process
+ *fill*         0x00000000c0010f01        0x3 90909090
+ .text          0x00000000c0010f04     0x1056 src/net/ftp/ftp_lib.o
+                0x00000000c0010f04                ftp_parm_save
+                0x00000000c0010f20                ftp_parm_restore
+                0x00000000c0010f55                ftp_parm_init
+                0x00000000c0010f89                ftp_open
+                0x00000000c0011118                ftp_quit
+                0x00000000c00112ac                ftp_user
+                0x00000000c00114ac                ftp_passwd
+                0x00000000c00116ac                ftp_close
+                0x00000000c001182e                ftp_ls
+                0x00000000c00119df                ftp_get
+                0x00000000c0011b9f                ftp_put
+                0x00000000c0011dab                ftp_type
+ *fill*         0x00000000c0011f5a        0x2 90909090
+ .text          0x00000000c0011f5c      0xd07 src/net/ftp/ftp_cmd.o
+                0x00000000c0011f5c                ftp_cmd_user_pre
+                0x00000000c0012142                ftp_cmd_user
+                0x00000000c00121e5                ftp_cmd_pass
+                0x00000000c0012270                ftp_cmd_syst
+                0x00000000c00122f4                ftp_cmd_quit
+                0x00000000c00124d2                ftp_cmd_port
+                0x00000000c00127d5                ftp_cmd_put
+ *fill*         0x00000000c0012c63        0x1 90909090
+ .text          0x00000000c0012c64      0x26e src/net/tcp/tcp_daemon.o
+                0x00000000c0012c64                init_tcp_daemon
+                0x00000000c0012cbb                tcp_daemon_main
+ *fill*         0x00000000c0012ed2        0x2 90909090
+ .text          0x00000000c0012ed4      0x420 src/net/dhcp/dhcp.o
+                0x00000000c0012ed4                dhcp_main
+                0x00000000c0013008                init_dhcp
+                0x00000000c0013185                dhcp_process
+ .text          0x00000000c00132f4     0x158f src/net/dhcp/dhcp_lib.o
+                0x00000000c00132f4                add_dhcp_header
+                0x00000000c00133f9                dhcp_send_discover
+                0x00000000c0013815                dhcp_send_request
+                0x00000000c0013ce5                dhcp_send_release
+                0x00000000c001411e                dhcp_send_offer
+                0x00000000c001438d                dhcp_send_ack
+                0x00000000c00145fc                dhcp_send_nack
+                0x00000000c001486b                get_transid
+ *fill*         0x00000000c0014883        0x1 90909090
+ .text          0x00000000c0014884      0x5c2 src/net/tftp/tftp.o
+                0x00000000c0014884                tftp_main
+                0x00000000c0014a15                init_tftp
+                0x00000000c0014b3c                tftp_process
+ *fill*         0x00000000c0014e46        0x2 90909090
+ .text          0x00000000c0014e48      0x893 src/net/tftp/tftp_lib.o
+                0x00000000c0014e48                tftp_add_rrq
+                0x00000000c0015013                tftp_add_wrq
+                0x00000000c00151de                tftp_add_data
+                0x00000000c00153bc                tftp_add_ack
+                0x00000000c001552b                tftp_add_error
+                0x00000000c00156c3                get_port
+ *fill*         0x00000000c00156db        0x1 90909090
+ .text          0x00000000c00156dc      0x2ed src/net/dns/dns.o
+                0x00000000c00156dc                dns_main
+                0x00000000c00157d8                init_dns
+                0x00000000c00158c9                dns_process
+ *fill*         0x00000000c00159c9        0x3 90909090
+ .text          0x00000000c00159cc      0x925 src/net/dns/dns_lib.o
+                0x00000000c00159cc                add_dns_header
+                0x00000000c0015a81                dns_send_ip
+                0x00000000c0015c20                dns_send_name
+                0x00000000c0015dbb                dns_return_name
+                0x00000000c001604e                dns_return_ip
+                0x00000000c00162dc                get_id
+ *fill*         0x00000000c00162f1        0x3 90909090
+ .text          0x00000000c00162f4      0x24b src/net/snmp/snmp.o
+                0x00000000c00162f4                snmp_main
+                0x00000000c00163a9                init_snmp
+                0x00000000c00164b8                snmp_process
+ *fill*         0x00000000c001653f        0x1 90909090
+ .text          0x00000000c0016540      0x4d7 src/net/snmp/snmp_lib.o
+                0x00000000c0016540                getrequest
+ *fill*         0x00000000c0016a17        0x1 90909090
+ .text          0x00000000c0016a18      0x67d src/net/http/http.o
+                0x00000000c0016a18                http_main
+                0x00000000c0016b11                init_http
+                0x00000000c0016be9                http_process
+ *fill*         0x00000000c0017095        0x3 90909090
+ .text          0x00000000c0017098      0x8b7 src/net/http/http_lib.o
+                0x00000000c0017098                parm_init
+                0x00000000c0017166                http_req_get
+                0x00000000c001744f                http_res_get
+ *fill*         0x00000000c001794f        0x1 90909090
+ .text          0x00000000c0017950      0x2f6 src/net/http/http_cmd.o
+                0x00000000c0017950                http_open
+                0x00000000c0017acb                http_close
+ *fill*         0x00000000c0017c46        0x2 90909090
+ .text          0x00000000c0017c48      0x73c src/net/smtp/smtp.o
+                0x00000000c0017c48                smtp_main
+                0x00000000c0017d49                init_smtp
+                0x00000000c0017ee2                smtp_process
+ .text          0x00000000c0018384     0x1173 src/net/smtp/smtp_client.o
+                0x00000000c0018384                smtp_parm_init
+                0x00000000c00183ae                smtp_send_sys
+                0x00000000c00183b3                smtp_send_ehlo
+                0x00000000c0018674                smtp_send_mailfrom
+                0x00000000c0018935                smtp_send_rcptto
+                0x00000000c0018bf6                smtp_send_data
+                0x00000000c0018e6e                smtp_send_mail
+                0x00000000c001927f                smtp_send_quit
+ *fill*         0x00000000c00194f7        0x1 90909090
+ .text          0x00000000c00194f8      0x2f6 src/net/smtp/smtp_cmd.o
+                0x00000000c00194f8                smtp_open_sys
+                0x00000000c0019673                smtp_close_sys
+ *fill*         0x00000000c00197ee        0x2 90909090
+ .text          0x00000000c00197f0      0xbaf src/net/smtp/smtp_server.o
+                0x00000000c00197f0                smtp_send_ok
+                0x00000000c0019a8a                smtp_send_ready
+                0x00000000c0019d5b                smtp_send_startmail
+                0x00000000c001a02f                smtp_send_close
+                0x00000000c001a2c9                mail_process
+ *fill*         0x00000000c001a39f        0x1 90909090
+ .text          0x00000000c001a3a0      0x699 src/net/pop3/pop3.o
+                0x00000000c001a3a0                pop3_main
+                0x00000000c001a467                init_pop3
+                0x00000000c001a5f3                pop3_process
+ *fill*         0x00000000c001aa39        0x3 90909090
+ .text          0x00000000c001aa3c      0xf8e src/net/pop3/pop3_client.o
+                0x00000000c001aa3c                pop3_parm_init
+                0x00000000c001aa5c                pop3_send_user
+                0x00000000c001ad1a                pop3_send_pass
+                0x00000000c001afd8                pop3_send_mailinform
+                0x00000000c001b24d                pop3_send_maillist
+                0x00000000c001b4c2                pop3_send_retr
+                0x00000000c001b755                pop3_send_quit
+ *fill*         0x00000000c001b9ca        0x2 90909090
+ .text          0x00000000c001b9cc      0x2f6 src/net/pop3/pop3_cmd.o
+                0x00000000c001b9cc                pop3_open_sys
+                0x00000000c001bb47                pop3_close_sys
+ *fill*         0x00000000c001bcc2        0x2 90909090
+ .text          0x00000000c001bcc4     0x140a src/net/pop3/pop3_server.o
+                0x00000000c001bd72                pop3_send_ready
+                0x00000000c001c039                pop3_send_user_ok
+                0x00000000c001c2ba                pop3_send_pass_ok
+                0x00000000c001c584                pop3_send_mailinform_ok
+                0x00000000c001c84e                pop3_send_maillist_ok
+                0x00000000c001cb3f                pop3_send_mail
+                0x00000000c001ce4d                pop3_send_quit_ok
+ *fill*         0x00000000c001d0ce        0x2 90909090
+ .text          0x00000000c001d0d0      0x68f src/net/telnet/telnet.o
+                0x00000000c001d0d0                telnet_main
+                0x00000000c001d190                init_telnet
+                0x00000000c001d378                telnet_process
+ *fill*         0x00000000c001d75f        0x1 90909090
+ .text          0x00000000c001d760      0xd10 src/net/telnet/telnet_client.o
+                0x00000000c001d760                telnet_send_ctrl
+                0x00000000c001daeb                telnet_send_username
+                0x00000000c001dd60                telnet_send_password
+                0x00000000c001dfd5                telnet_send_ls
+                0x00000000c001e219                telnet_send_quit
+ .text          0x00000000c001e470      0x33b src/net/telnet/telnet_cmd.o
+                0x00000000c001e470                telnet_open_sys
+                0x00000000c001e5eb                telnet_quit_sys
+ *fill*         0x00000000c001e7ab        0x1 90909090
+ .text          0x00000000c001e7ac     0x11cd src/net/telnet/telnet_server.o
+                0x00000000c001e7ac                telnet_send_usertitle
+                0x00000000c001ea1f                telnet_send_passtitle
+                0x00000000c001ec95                telnet_send_logintitle
+                0x00000000c001eed8                telnet_res_ls
+                0x00000000c001f1a3                telnet_res_quit
+                0x00000000c001f434                telnet_res_ctrl
+ *fill*         0x00000000c001f979        0x3 90909090
+ .text          0x00000000c001f97c      0x119 src/lib/adthas.a(string.o)
+                0x00000000c001f97c                strcopy
+                0x00000000c001f9a0                strcpy
+                0x00000000c001f9d0                memcpy
+                0x00000000c001fa00                strlen
+                0x00000000c001fa26                strcmp
+ *fill*         0x00000000c001fa95        0x3 90909090
+ .text          0x00000000c001fa98      0x594 src/lib/adthas.a(libc.o)
+                0x00000000c001fa98                i2s
+                0x00000000c001fb15                i2h
+                0x00000000c001fb94                c2i
+                0x00000000c001fba9                s2i
+                0x00000000c001fc1d                squ
+                0x00000000c001fc4e                big_little_16
+                0x00000000c001fc78                big_little_32
+                0x00000000c001fca7                little_big_16
+                0x00000000c001fcd1                little_big_32
+                0x00000000c001fd00                push
+                0x00000000c001fd51                clear_buf
+                0x00000000c001fd77                num2bit
+                0x00000000c001fecf                bit2num
+                0x00000000c001ff7e                empty_buf
+                0x00000000c001ffb2                delay
+                0x00000000c001fff5                bcd_2_i
+ .text          0x00000000c002002c       0x2e src/lib/adthas.a(mkdir.o)
+                0x00000000c002002c                mkdir
+ *fill*         0x00000000c002005a        0x2 90909090
+ .text          0x00000000c002005c       0x2e src/lib/adthas.a(mkfile.o)
+                0x00000000c002005c                mkfile
+ *fill*         0x00000000c002008a        0x2 90909090
+ .text          0x00000000c002008c       0x41 src/lib/adthas.a(cat.o)
+                0x00000000c002008c                cat
+ *fill*         0x00000000c00200cd        0x3 90909090
+ .text          0x00000000c00200d0       0x55 src/lib/adthas.a(getmsg.o)
+                0x00000000c00200d0                get_msg
+ *fill*         0x00000000c0020125        0x3 90909090
+ .text          0x00000000c0020128       0x19 src/lib/adthas.a(sendmsg.o)
+                0x00000000c0020128                send_msg
+ *fill*         0x00000000c0020141        0x3 90909090
+ .text          0x00000000c0020144       0x3b src/lib/adthas.a(read.o)
+                0x00000000c0020144                read
+ *fill*         0x00000000c002017f        0x1 90909090
+ .text          0x00000000c0020180       0x43 src/lib/adthas.a(libsys.o)
+                0x00000000c0020180                cpid
+                0x00000000c0020190                l2p_addr
+ *fill*         0x00000000c00201c3        0xd 90909090
+ .text          0x00000000c00201d0       0x48 src/lib/adthas.a(syscalla.o)
+                0x00000000c00201d0                send
+                0x00000000c00201dc                forward
+                0x00000000c00201e8                receive
+                0x00000000c00201f4                setstatus
+                0x00000000c0020200                prints
+                0x00000000c002020c                setattr
+ *fill*         0x00000000c0020218        0x8 90909090
+ .text          0x00000000c0020220       0x34 src/lib/adthas.a(ulib.o)
+                0x00000000c0020220                u_desc_baseaddr_get
+ .text          0x00000000c0020254       0x3a src/lib/adthas.a(write.o)
+                0x00000000c0020254                write
+ *fill*         0x00000000c002028e        0x2 90909090
+ .text          0x00000000c0020290       0x3a src/lib/adthas.a(readb.o)
+                0x00000000c0020290                readb
+ *fill*         0x00000000c00202ca        0x2 90909090
+ .text          0x00000000c00202cc      0x1ff src/lib/adthas.a(printk.o)
+                0x00000000c00202cc                printk
+                0x00000000c00202f1                printk_exec
+ *fill*         0x00000000c00204cb        0x1 90909090
+ .text          0x00000000c00204cc      0x24e src/lib/adthas.a(libn.o)
+                0x00000000c00204cc                makechksum
+                0x00000000c002053e                s2ip
+                0x00000000c002060b                chk_src_dest_ip
+                0x00000000c0020662                chk_src_dest_mac
+                0x00000000c00206bb                pr_mac
+ *(.gnu.warning)
+
+.fini
+ *(.fini)
+                0x00000000c002071a                PROVIDE (__etext, .)
+                0x00000000c002071a                PROVIDE (_etext, .)
+                0x00000000c002071a                PROVIDE (etext, .)
+
+.rodata         0x00000000c002071c     0x1075
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata        0x00000000c002071c        0xd src/kernel/8259a.o
+ .rodata        0x00000000c0020729        0xc src/kernel/proc.o
+ .rodata        0x00000000c0020735      0x1c1 src/kernel/signal.o
+ .rodata        0x00000000c00208f6       0x21 src/mesg/mesg.o
+ .rodata        0x00000000c0020917        0xa src/keyboard/keyboard.o
+ .rodata        0x00000000c0020921        0xb src/tty/tty.o
+ .rodata        0x00000000c002092c       0x3d src/hd/hd.o
+ *fill*         0x00000000c0020969        0x3 00
+ .rodata        0x00000000c002096c       0x5c src/fs/dts/fs.o
+ .rodata        0x00000000c00209c8      0x208 src/fs/vfs.o
+ .rodata        0x00000000c0020bd0       0x2e src/hd/hd_manager.o
+ *fill*         0x00000000c0020bfe        0x2 00
+ .rodata        0x00000000c0020c00       0xec src/fs/vfslib.o
+ .rodata        0x00000000c0020cec      0x11e src/hd/partition.o
+ .rodata        0x00000000c0020e0a       0x5c src/sys/sys.o
+ *fill*         0x00000000c0020e66        0x2 00
+ .rodata        0x00000000c0020e68       0x3b src/uproc/uproc.o
+ *fill*         0x00000000c0020ea3        0x1 00
+ .rodata        0x00000000c0020ea4       0x5c src/uproc/ucrt.o
+ .rodata        0x00000000c0020f00       0x51 src/uproc/mem_manage.o
+ .rodata        0x00000000c0020f51       0x10 src/uproc/page.o
+ *fill*         0x00000000c0020f61        0x3 00
+ .rodata        0x00000000c0020f64       0x94 src/pci/pci.o
+ .rodata        0x00000000c0020ff8       0x68 src/net/net.o
+ .rodata        0x00000000c0021060       0x2b src/net/rtl8029.o
+ *fill*         0x00000000c002108b        0x1 00
+ .rodata        0x00000000c002108c       0x3a src/net/ethernet.o
+ *fill*         0x00000000c00210c6        0x2 00
+ .rodata        0x00000000c00210c8       0x22 src/net/icmp.o
+ .rodata        0x00000000c00210ea       0x17 src/net/ipv4.o
+ *fill*         0x00000000c0021101        0x3 00
+ .rodata        0x00000000c0021104      0x1e4 src/net/route.o
+ .rodata        0x00000000c00212e8       0x1e src/net/traceroutes.o
+ *fill*         0x00000000c0021306        0x2 00
+ .rodata        0x00000000c0021308       0x30 src/net/tcp/tcp.o
+ .rodata        0x00000000c0021338      0x10e src/net/ftp/ftp.o
+ .rodata        0x00000000c0021446       0x11 src/net/ftp/ftp_lib.o
+ .rodata        0x00000000c0021457       0x28 src/net/tcp/tcp_daemon.o
+ .rodata        0x00000000c002147f        0xc src/net/dhcp/dhcp.o
+ *fill*         0x00000000c002148b        0x1 00
+ .rodata        0x00000000c002148c       0x4c src/net/tftp/tftp.o
+ .rodata        0x00000000c00214d8        0xd src/net/dns/dns.o
+ .rodata        0x00000000c00214e5        0xc src/net/snmp/snmp.o
+ .rodata        0x00000000c00214f1       0x13 src/net/http/http.o
+ .rodata        0x00000000c0021504       0x11 src/net/http/http_lib.o
+ *fill*         0x00000000c0021515        0x3 00
+ .rodata        0x00000000c0021518       0x74 src/net/smtp/smtp.o
+ .rodata        0x00000000c002158c       0xc4 src/net/pop3/pop3.o
+ .rodata        0x00000000c0021650        0xf src/net/pop3/pop3_server.o
+ .rodata        0x00000000c002165f       0x20 src/net/telnet/telnet.o
+ *fill*         0x00000000c002167f        0x1 00
+ .rodata        0x00000000c0021680       0xa0 src/net/telnet/telnet_server.o
+ .rodata        0x00000000c0021720       0x44 src/lib/adthas.a(libc.o)
+ .rodata        0x00000000c0021764       0x15 src/lib/adthas.a(getmsg.o)
+ .rodata        0x00000000c0021779       0x18 src/lib/adthas.a(libn.o)
+
+.gdt_data       0x00000000c0021791        0x6
+ .gdt_data      0x00000000c0021791        0x6 src/kernel/krl.o
+                0x00000000c0021791                gdtr
+
+.idt_data       0x00000000c0021797       0xba
+ .idt_data      0x00000000c0021797       0xba src/kernel/krl.o
+
+.tss            0x00000000c0021851       0x6e
+ .tss           0x00000000c0021851       0x6e src/kernel/krl.o
+                0x00000000c00218b9                idtr
+
+.shutdown32     0x00000000c00218c0       0x2b
+ .shutdown32    0x00000000c00218c0       0x2b src/kernel/klib.o
+                0x00000000c00218c0                shutdown
+
+.shutdown16     0x00000000c00218f0       0x33
+ .shutdown16    0x00000000c00218f0       0x33 src/kernel/klib.o
+
+.rodata1
+ *(.rodata1)
+
+.eh_frame_hdr
+ *(.eh_frame_hdr)
+
+.eh_frame       0x00000000c0021924     0x335c
+ *(.eh_frame)
+ .eh_frame      0x00000000c0021924       0x38 src/kernel/8259a.o
+ .eh_frame      0x00000000c002195c       0xc0 src/kernel/proc.o
+                                         0xd8 (size before relaxing)
+ .eh_frame      0x00000000c0021a1c       0x60 src/kernel/clock.o
+                                         0x78 (size before relaxing)
+ .eh_frame      0x00000000c0021a7c       0xf4 src/kernel/signal.o
+                                        0x10c (size before relaxing)
+ .eh_frame      0x00000000c0021b70       0xdc src/mesg/mesg.o
+                                         0xf4 (size before relaxing)
+ .eh_frame      0x00000000c0021c4c       0x80 src/keyboard/keyboard.o
+                                         0x98 (size before relaxing)
+ .eh_frame      0x00000000c0021ccc      0x2dc src/tty/tty.o
+                                        0x2f4 (size before relaxing)
+ .eh_frame      0x00000000c0021fa8      0x12c src/hd/hd.o
+                                        0x144 (size before relaxing)
+ .eh_frame      0x00000000c00220d4      0x284 src/fs/dts/fs.o
+                                        0x29c (size before relaxing)
+ .eh_frame      0x00000000c0022358      0x1e4 src/fs/vfs.o
+                                        0x1fc (size before relaxing)
+ .eh_frame      0x00000000c002253c       0x80 src/hd/hd_manager.o
+                                         0x98 (size before relaxing)
+ .eh_frame      0x00000000c00225bc      0x120 src/fs/vfslib.o
+                                        0x138 (size before relaxing)
+ .eh_frame      0x00000000c00226dc       0x40 src/hd/partition.o
+                                         0x58 (size before relaxing)
+ .eh_frame      0x00000000c002271c      0x13c src/sys/sys.o
+                                        0x154 (size before relaxing)
+ .eh_frame      0x00000000c0022858       0x6c src/sys/time.o
+                                         0x84 (size before relaxing)
+ .eh_frame      0x00000000c00228c4       0xfc src/uproc/uproc.o
+                                        0x114 (size before relaxing)
+ .eh_frame      0x00000000c00229c0       0x80 src/uproc/ucrt.o
+                                         0x98 (size before relaxing)
+ .eh_frame      0x00000000c0022a40       0xac src/uproc/mem_manage.o
+                                         0xc4 (size before relaxing)
+ .eh_frame      0x00000000c0022aec       0x60 src/uproc/page.o
+                                         0x78 (size before relaxing)
+ .eh_frame      0x00000000c0022b4c       0x60 src/pci/pci.o
+                                         0x78 (size before relaxing)
+ .eh_frame      0x00000000c0022bac       0x68 src/net/net.o
+                                         0x80 (size before relaxing)
+ .eh_frame      0x00000000c0022c14       0xe8 src/net/rtl8029.o
+                                        0x100 (size before relaxing)
+ .eh_frame      0x00000000c0022cfc       0xac src/net/ethernet.o
+                                         0xc4 (size before relaxing)
+ .eh_frame      0x00000000c0022da8       0x60 src/net/frame.o
+                                         0x78 (size before relaxing)
+ .eh_frame      0x00000000c0022e08       0x78 src/net/icmp.o
+                                         0x90 (size before relaxing)
+ .eh_frame      0x00000000c0022e80       0xd4 src/net/ipv4.o
+                                         0xec (size before relaxing)
+ .eh_frame      0x00000000c0022f54      0x170 src/net/route.o
+                                        0x188 (size before relaxing)
+ .eh_frame      0x00000000c00230c4       0x28 src/net/traceroutes.o
+                                         0x40 (size before relaxing)
+ .eh_frame      0x00000000c00230ec       0x28 src/net/udp.o
+                                         0x40 (size before relaxing)
+ .eh_frame      0x00000000c0023114       0xb0 src/net/dy_routes.o
+                                         0xc8 (size before relaxing)
+ .eh_frame      0x00000000c00231c4       0x40 src/net/igmp.o
+                                         0x58 (size before relaxing)
+ .eh_frame      0x00000000c0023204       0xc0 src/net/tcp/tcp.o
+                                         0xd8 (size before relaxing)
+ .eh_frame      0x00000000c00232c4       0x7c src/net/ftp/ftp.o
+                                         0x94 (size before relaxing)
+ .eh_frame      0x00000000c0023340      0x210 src/net/ftp/ftp_lib.o
+                                        0x228 (size before relaxing)
+ .eh_frame      0x00000000c0023550      0x120 src/net/ftp/ftp_cmd.o
+                                        0x138 (size before relaxing)
+ .eh_frame      0x00000000c0023670       0x9c src/net/tcp/tcp_daemon.o
+                                         0xb4 (size before relaxing)
+ .eh_frame      0x00000000c002370c       0x7c src/net/dhcp/dhcp.o
+                                         0x94 (size before relaxing)
+ .eh_frame      0x00000000c0023788      0x16c src/net/dhcp/dhcp_lib.o
+                                        0x184 (size before relaxing)
+ .eh_frame      0x00000000c00238f4       0x88 src/net/tftp/tftp.o
+                                         0xa0 (size before relaxing)
+ .eh_frame      0x00000000c002397c       0xe8 src/net/tftp/tftp_lib.o
+                                        0x100 (size before relaxing)
+ .eh_frame      0x00000000c0023a64       0x7c src/net/dns/dns.o
+                                         0x94 (size before relaxing)
+ .eh_frame      0x00000000c0023ae0      0x10c src/net/dns/dns_lib.o
+                                        0x124 (size before relaxing)
+ .eh_frame      0x00000000c0023bec       0x7c src/net/snmp/snmp.o
+                                         0x94 (size before relaxing)
+ .eh_frame      0x00000000c0023c68       0x28 src/net/snmp/snmp_lib.o
+                                         0x40 (size before relaxing)
+ .eh_frame      0x00000000c0023c90       0x7c src/net/http/http.o
+                                         0x94 (size before relaxing)
+ .eh_frame      0x00000000c0023d0c       0xa8 src/net/http/http_lib.o
+                                         0xc0 (size before relaxing)
+ .eh_frame      0x00000000c0023db4       0x60 src/net/http/http_cmd.o
+                                         0x78 (size before relaxing)
+ .eh_frame      0x00000000c0023e14       0x7c src/net/smtp/smtp.o
+                                         0x94 (size before relaxing)
+ .eh_frame      0x00000000c0023e90      0x160 src/net/smtp/smtp_client.o
+                                        0x178 (size before relaxing)
+ .eh_frame      0x00000000c0023ff0       0x60 src/net/smtp/smtp_cmd.o
+                                         0x78 (size before relaxing)
+ .eh_frame      0x00000000c0024050       0xe0 src/net/smtp/smtp_server.o
+                                         0xf8 (size before relaxing)
+ .eh_frame      0x00000000c0024130       0x7c src/net/pop3/pop3.o
+                                         0x94 (size before relaxing)
+ .eh_frame      0x00000000c00241ac      0x140 src/net/pop3/pop3_client.o
+                                        0x158 (size before relaxing)
+ .eh_frame      0x00000000c00242ec       0x60 src/net/pop3/pop3_cmd.o
+                                         0x78 (size before relaxing)
+ .eh_frame      0x00000000c002434c      0x178 src/net/pop3/pop3_server.o
+                                        0x190 (size before relaxing)
+ .eh_frame      0x00000000c00244c4       0x7c src/net/telnet/telnet.o
+                                         0x94 (size before relaxing)
+ .eh_frame      0x00000000c0024540       0xf0 src/net/telnet/telnet_client.o
+                                        0x108 (size before relaxing)
+ .eh_frame      0x00000000c0024630       0x60 src/net/telnet/telnet_cmd.o
+                                         0x78 (size before relaxing)
+ .eh_frame      0x00000000c0024690      0x120 src/net/telnet/telnet_server.o
+                                        0x138 (size before relaxing)
+ .eh_frame      0x00000000c00247b0       0xa0 src/lib/adthas.a(string.o)
+                                         0xb8 (size before relaxing)
+ .eh_frame      0x00000000c0024850      0x204 src/lib/adthas.a(libc.o)
+                                        0x21c (size before relaxing)
+ .eh_frame      0x00000000c0024a54       0x20 src/lib/adthas.a(mkdir.o)
+                                         0x38 (size before relaxing)
+ .eh_frame      0x00000000c0024a74       0x20 src/lib/adthas.a(mkfile.o)
+                                         0x38 (size before relaxing)
+ .eh_frame      0x00000000c0024a94       0x20 src/lib/adthas.a(cat.o)
+                                         0x38 (size before relaxing)
+ .eh_frame      0x00000000c0024ab4       0x20 src/lib/adthas.a(getmsg.o)
+                                         0x38 (size before relaxing)
+ .eh_frame      0x00000000c0024ad4       0x20 src/lib/adthas.a(sendmsg.o)
+                                         0x38 (size before relaxing)
+ .eh_frame      0x00000000c0024af4       0x20 src/lib/adthas.a(read.o)
+                                         0x38 (size before relaxing)
+ .eh_frame      0x00000000c0024b14       0x40 src/lib/adthas.a(libsys.o)
+                                         0x58 (size before relaxing)
+ .eh_frame      0x00000000c0024b54       0x20 src/lib/adthas.a(write.o)
+                                         0x38 (size before relaxing)
+ .eh_frame      0x00000000c0024b74       0x20 src/lib/adthas.a(readb.o)
+                                         0x38 (size before relaxing)
+ .eh_frame      0x00000000c0024b94       0x40 src/lib/adthas.a(printk.o)
+                                         0x58 (size before relaxing)
+ .eh_frame      0x00000000c0024bd4       0xac src/lib/adthas.a(libn.o)
+                                         0xc4 (size before relaxing)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.exception_ranges
+ *(.exception_ranges .exception_ranges*)
+                0x00000000c0024c80                . = (ALIGN (0x1000) - ((0x1000 - .) & 0xfff))
+                0x00000000c0025000                . = DATA_SEGMENT_ALIGN (0x1000, 0x1000)
+
+.eh_frame
+ *(.eh_frame)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.exception_ranges
+ *(.exception_ranges .exception_ranges*)
+
+.tdata
+ *(.tdata .tdata.* .gnu.linkonce.td.*)
+
+.tbss
+ *(.tbss .tbss.* .gnu.linkonce.tb.*)
+ *(.tcommon)
+
+.preinit_array  0x00000000c0025000        0x0
+                0x00000000c0025000                PROVIDE (__preinit_array_start, .)
+ *(.preinit_array)
+                0x00000000c0025000                PROVIDE (__preinit_array_end, .)
+
+.init_array     0x00000000c0025000        0x0
+                0x00000000c0025000                PROVIDE (__init_array_start, .)
+ *(SORT(.init_array.*) SORT(.ctors.*))
+ *(.init_array)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .ctors)
+                0x00000000c0025000                PROVIDE (__init_array_end, .)
+
+.fini_array     0x00000000c0025000        0x0
+                0x00000000c0025000                PROVIDE (__fini_array_start, .)
+ *(SORT(.fini_array.*) SORT(.dtors.*))
+ *(.fini_array)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .dtors)
+                0x00000000c0025000                PROVIDE (__fini_array_end, .)
+
+.ctors
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .ctors)
+ *(SORT(.ctors.*))
+ *(.ctors)
+
+.dtors
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors)
+ *(SORT(.dtors.*))
+ *(.dtors)
+
+.jcr
+ *(.jcr)
+
+.data.rel.ro
+ *(.data.rel.ro.local* .gnu.linkonce.d.rel.ro.local.*)
+ *(.data.rel.ro* .gnu.linkonce.d.rel.ro.*)
+
+.dynamic
+ *(.dynamic)
+
+.got
+ *(.got)
+ *(.igot)
+                0x00000000c0025000                . = DATA_SEGMENT_RELRO_END (., 0xc)
+
+.got.plt        0x00000000c0025000        0x0
+ *(.got.plt)
+ *(.igot.plt)
+ .igot.plt      0x0000000000000000        0x0 src/kernel/krl.o
+
+.data           0x00000000c0025000     0x108c
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data          0x00000000c0025000       0x26 src/kernel/krl.o
+                0x00000000c0025000                pos
+                0x00000000c0025004                current_tty
+                0x00000000c0025008                cur_pid
+                0x00000000c002500c                flg_int_rein
+                0x00000000c0025010                ticket
+ *fill*         0x00000000c0025026        0x2 00
+ .data          0x00000000c0025028        0x0 src/kernel/8259a.o
+ .data          0x00000000c0025028        0x0 src/kernel/proc.o
+ .data          0x00000000c0025028        0x0 src/kernel/clock.o
+ .data          0x00000000c0025028        0x0 src/kernel/signal.o
+ .data          0x00000000c0025028       0x18 src/kernel/syscallc.o
+                0x00000000c0025028                syscall_tab
+ .data          0x00000000c0025040        0x0 src/mesg/mesg.o
+ .data          0x00000000c0025040        0x1 src/keyboard/keyboard.o
+ *fill*         0x00000000c0025041        0x3 00
+ .data          0x00000000c0025044        0x0 src/tty/tty.o
+ .data          0x00000000c0025044        0x4 src/hd/hd.o
+                0x00000000c0025044                hdinfo
+ *fill*         0x00000000c0025048       0x18 00
+ .data          0x00000000c0025060       0x34 src/fs/dts/fs.o
+ .data          0x00000000c0025094       0x10 src/fs/vfs.o
+ .data          0x00000000c00250a4        0x0 src/hd/hd_manager.o
+ .data          0x00000000c00250a4        0x0 src/fs/vfslib.o
+ .data          0x00000000c00250a4        0x0 src/hd/partition.o
+ .data          0x00000000c00250a4        0x0 src/sys/sys.o
+ *fill*         0x00000000c00250a4       0x1c 00
+ .data          0x00000000c00250c0      0x4a0 src/sys/time.o
+ .data          0x00000000c0025560        0x0 src/uproc/uproc.o
+ .data          0x00000000c0025560        0x0 src/uproc/ucrt.o
+ .data          0x00000000c0025560        0x0 src/uproc/mem_manage.o
+ .data          0x00000000c0025560        0x0 src/uproc/page.o
+ .data          0x00000000c0025560        0x0 src/pci/pci.o
+ .data          0x00000000c0025560        0x0 src/net/net.o
+ .data          0x00000000c0025560        0x0 src/net/rtl8029.o
+ .data          0x00000000c0025560        0x0 src/net/ethernet.o
+ .data          0x00000000c0025560        0x0 src/net/frame.o
+ .data          0x00000000c0025560        0x0 src/net/icmp.o
+ .data          0x00000000c0025560        0x0 src/net/ipv4.o
+ .data          0x00000000c0025560        0x0 src/net/route.o
+ .data          0x00000000c0025560        0x0 src/net/traceroutes.o
+ .data          0x00000000c0025560        0x4 src/net/udp.o
+ .data          0x00000000c0025564        0x0 src/net/dy_routes.o
+ .data          0x00000000c0025564        0x0 src/net/igmp.o
+ .data          0x00000000c0025564        0x4 src/net/tcp/tcp.o
+ .data          0x00000000c0025568        0x0 src/net/ftp/ftp.o
+ .data          0x00000000c0025568        0x0 src/net/ftp/ftp_lib.o
+ .data          0x00000000c0025568        0x0 src/net/ftp/ftp_cmd.o
+ .data          0x00000000c0025568        0x0 src/net/tcp/tcp_daemon.o
+ .data          0x00000000c0025568        0x0 src/net/dhcp/dhcp.o
+ .data          0x00000000c0025568        0x0 src/net/dhcp/dhcp_lib.o
+ .data          0x00000000c0025568       0x2c src/net/tftp/tftp.o
+                0x00000000c002556c                dname
+                0x00000000c0025580                uname
+ .data          0x00000000c0025594       0x14 src/net/tftp/tftp_lib.o
+ *fill*         0x00000000c00255a8       0x18 00
+ .data          0x00000000c00255c0       0xc0 src/net/dns/dns.o
+                0x00000000c00255c0                domain_name
+                0x00000000c0025600                domain_name_format
+                0x00000000c0025640                ip_format
+ .data          0x00000000c0025680        0x0 src/net/dns/dns_lib.o
+ .data          0x00000000c0025680        0x0 src/net/snmp/snmp.o
+ .data          0x00000000c0025680        0x0 src/net/snmp/snmp_lib.o
+ .data          0x00000000c0025680        0x0 src/net/http/http.o
+ .data          0x00000000c0025680      0x4e0 src/net/http/http_lib.o
+ .data          0x00000000c0025b60        0x0 src/net/http/http_cmd.o
+ .data          0x00000000c0025b60       0x40 src/net/smtp/smtp.o
+ .data          0x00000000c0025ba0      0x232 src/net/smtp/smtp_client.o
+ *fill*         0x00000000c0025dd2        0x2 00
+ .data          0x00000000c0025dd4        0x0 src/net/smtp/smtp_cmd.o
+ *fill*         0x00000000c0025dd4        0xc 00
+ .data          0x00000000c0025de0       0x43 src/net/smtp/smtp_server.o
+ *fill*         0x00000000c0025e23        0x1 00
+ .data          0x00000000c0025e24        0x0 src/net/pop3/pop3.o
+ *fill*         0x00000000c0025e24       0x1c 00
+ .data          0x00000000c0025e40       0x5a src/net/pop3/pop3_client.o
+ *fill*         0x00000000c0025e9a        0x2 00
+ .data          0x00000000c0025e9c        0x0 src/net/pop3/pop3_cmd.o
+ *fill*         0x00000000c0025e9c        0x4 00
+ .data          0x00000000c0025ea0       0xc4 src/net/pop3/pop3_server.o
+ .data          0x00000000c0025f64       0x1e src/net/telnet/telnet.o
+ *fill*         0x00000000c0025f82        0x2 00
+ .data          0x00000000c0025f84       0x14 src/net/telnet/telnet_client.o
+ .data          0x00000000c0025f98        0xa src/net/telnet/telnet_cmd.o
+ *fill*         0x00000000c0025fa2       0x1e 00
+ .data          0x00000000c0025fc0       0xcc src/net/telnet/telnet_server.o
+ .data          0x00000000c002608c        0x0 src/lib/adthas.a(string.o)
+ .data          0x00000000c002608c        0x0 src/lib/adthas.a(libc.o)
+ .data          0x00000000c002608c        0x0 src/lib/adthas.a(mkdir.o)
+ .data          0x00000000c002608c        0x0 src/lib/adthas.a(mkfile.o)
+ .data          0x00000000c002608c        0x0 src/lib/adthas.a(cat.o)
+ .data          0x00000000c002608c        0x0 src/lib/adthas.a(getmsg.o)
+ .data          0x00000000c002608c        0x0 src/lib/adthas.a(sendmsg.o)
+ .data          0x00000000c002608c        0x0 src/lib/adthas.a(read.o)
+ .data          0x00000000c002608c        0x0 src/lib/adthas.a(libsys.o)
+ .data          0x00000000c002608c        0x0 src/lib/adthas.a(write.o)
+ .data          0x00000000c002608c        0x0 src/lib/adthas.a(readb.o)
+ .data          0x00000000c002608c        0x0 src/lib/adthas.a(printk.o)
+ .data          0x00000000c002608c        0x0 src/lib/adthas.a(libn.o)
+
+.data1
+ *(.data1)
+                0x00000000c002608c                _edata = .
+                0x00000000c002608c                PROVIDE (edata, .)
+                0x00000000c002608c                __bss_start = .
+
+.bss            0x00000000c00260a0    0x67b40
+ *(.dynbss)
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x00000000c00260a0     0x2c00 src/kernel/krl.o
+                0x00000000c00260a0                gdt_desc
+                0x00000000c00264a0                idt_desc
+ .bss           0x00000000c0028ca0        0x0 src/kernel/8259a.o
+ .bss           0x00000000c0028ca0        0x0 src/kernel/proc.o
+ .bss           0x00000000c0028ca0        0x0 src/kernel/clock.o
+ .bss           0x00000000c0028ca0        0x0 src/kernel/signal.o
+ .bss           0x00000000c0028ca0        0x0 src/kernel/syscallc.o
+ .bss           0x00000000c0028ca0        0x0 src/mesg/mesg.o
+ .bss           0x00000000c0028ca0       0x5a src/keyboard/keyboard.o
+ *fill*         0x00000000c0028cfa        0x6 00
+ .bss           0x00000000c0028d00      0x908 src/tty/tty.o
+ .bss           0x00000000c0029608        0x1 src/hd/hd.o
+ *fill*         0x00000000c0029609       0x17 00
+ .bss           0x00000000c0029620     0x10c0 src/fs/dts/fs.o
+ .bss           0x00000000c002a6e0       0x78 src/fs/vfs.o
+ .bss           0x00000000c002a758       0x10 src/hd/hd_manager.o
+ *fill*         0x00000000c002a768       0x18 00
+ .bss           0x00000000c002a780     0x1000 src/fs/vfslib.o
+ .bss           0x00000000c002b780       0x38 src/hd/partition.o
+ .bss           0x00000000c002b7b8        0x0 src/sys/sys.o
+ *fill*         0x00000000c002b7b8        0x8 00
+ .bss           0x00000000c002b7c0      0x340 src/sys/time.o
+ .bss           0x00000000c002bb00        0x0 src/uproc/uproc.o
+ .bss           0x00000000c002bb00        0x0 src/uproc/ucrt.o
+ .bss           0x00000000c002bb00       0x10 src/uproc/mem_manage.o
+ .bss           0x00000000c002bb10        0x0 src/uproc/page.o
+ *fill*         0x00000000c002bb10       0x10 00
+ .bss           0x00000000c002bb20     0x4600 src/pci/pci.o
+ .bss           0x00000000c0030120        0x0 src/net/net.o
+ .bss           0x00000000c0030120       0x12 src/net/rtl8029.o
+ *fill*         0x00000000c0030132        0x2 00
+ .bss           0x00000000c0030134        0x0 src/net/ethernet.o
+ .bss           0x00000000c0030134        0x0 src/net/frame.o
+ .bss           0x00000000c0030134        0x0 src/net/icmp.o
+ .bss           0x00000000c0030134        0x0 src/net/ipv4.o
+ *fill*         0x00000000c0030134        0xc 00
+ .bss           0x00000000c0030140      0x9c5 src/net/route.o
+ *fill*         0x00000000c0030b05        0x3 00
+ .bss           0x00000000c0030b08        0x0 src/net/traceroutes.o
+ .bss           0x00000000c0030b08        0x0 src/net/udp.o
+ .bss           0x00000000c0030b08        0x0 src/net/dy_routes.o
+ .bss           0x00000000c0030b08        0x0 src/net/igmp.o
+ *fill*         0x00000000c0030b08       0x18 00
+ .bss           0x00000000c0030b20      0x2d8 src/net/tcp/tcp.o
+ .bss           0x00000000c0030df8        0x0 src/net/ftp/ftp.o
+ .bss           0x00000000c0030df8        0x0 src/net/ftp/ftp_lib.o
+ .bss           0x00000000c0030df8        0x0 src/net/ftp/ftp_cmd.o
+ .bss           0x00000000c0030df8        0x0 src/net/tcp/tcp_daemon.o
+ *fill*         0x00000000c0030df8        0x8 00
+ .bss           0x00000000c0030e00      0x1d4 src/net/dhcp/dhcp.o
+ .bss           0x00000000c0030fd4        0x0 src/net/dhcp/dhcp_lib.o
+ *fill*         0x00000000c0030fd4        0xc 00
+ .bss           0x00000000c0030fe0      0x160 src/net/tftp/tftp.o
+ .bss           0x00000000c0031140        0x0 src/net/tftp/tftp_lib.o
+ .bss           0x00000000c0031140       0x3c src/net/dns/dns.o
+ .bss           0x00000000c003117c        0x0 src/net/dns/dns_lib.o
+ *fill*         0x00000000c003117c        0x4 00
+ .bss           0x00000000c0031180       0xf0 src/net/snmp/snmp.o
+ .bss           0x00000000c0031270        0x0 src/net/snmp/snmp_lib.o
+ *fill*         0x00000000c0031270       0x10 00
+ .bss           0x00000000c0031280       0x70 src/net/http/http.o
+ .bss           0x00000000c00312f0        0x0 src/net/http/http_lib.o
+ .bss           0x00000000c00312f0        0x0 src/net/http/http_cmd.o
+ *fill*         0x00000000c00312f0       0x10 00
+ .bss           0x00000000c0031300      0x780 src/net/smtp/smtp.o
+ .bss           0x00000000c0031a80        0x0 src/net/smtp/smtp_client.o
+ .bss           0x00000000c0031a80        0x0 src/net/smtp/smtp_cmd.o
+ .bss           0x00000000c0031a80        0x0 src/net/smtp/smtp_server.o
+ .bss           0x00000000c0031a80      0x5dc src/net/pop3/pop3.o
+ .bss           0x00000000c003205c        0x0 src/net/pop3/pop3_client.o
+ .bss           0x00000000c003205c        0x0 src/net/pop3/pop3_cmd.o
+ .bss           0x00000000c003205c        0x0 src/net/pop3/pop3_server.o
+ *fill*         0x00000000c003205c        0x4 00
+ .bss           0x00000000c0032060      0x330 src/net/telnet/telnet.o
+ .bss           0x00000000c0032390        0x0 src/net/telnet/telnet_client.o
+ .bss           0x00000000c0032390        0x0 src/net/telnet/telnet_cmd.o
+ .bss           0x00000000c0032390        0x0 src/net/telnet/telnet_server.o
+ .bss           0x00000000c0032390        0x0 src/lib/adthas.a(string.o)
+ .bss           0x00000000c0032390        0x0 src/lib/adthas.a(libc.o)
+ .bss           0x00000000c0032390        0x0 src/lib/adthas.a(mkdir.o)
+ .bss           0x00000000c0032390        0x0 src/lib/adthas.a(mkfile.o)
+ .bss           0x00000000c0032390        0x0 src/lib/adthas.a(cat.o)
+ .bss           0x00000000c0032390        0x0 src/lib/adthas.a(getmsg.o)
+ .bss           0x00000000c0032390        0x0 src/lib/adthas.a(sendmsg.o)
+ .bss           0x00000000c0032390        0x0 src/lib/adthas.a(read.o)
+ .bss           0x00000000c0032390        0x0 src/lib/adthas.a(libsys.o)
+ .bss           0x00000000c0032390        0x0 src/lib/adthas.a(write.o)
+ .bss           0x00000000c0032390        0x0 src/lib/adthas.a(readb.o)
+ .bss           0x00000000c0032390        0x0 src/lib/adthas.a(printk.o)
+ .bss           0x00000000c0032390        0x0 src/lib/adthas.a(libn.o)
+ *(COMMON)
+ COMMON         0x00000000c0032390        0x8 src/kernel/8259a.o
+                0x00000000c0032390                wait_schd_tick
+                0x00000000c0032394                proc_schd_next
+ *fill*         0x00000000c0032398        0x8 00
+ COMMON         0x00000000c00323a0    0x38aaa src/kernel/proc.o
+                0x00000000c00323a0                flg_ftp_user
+                0x00000000c00323a4                p_tty_stack
+                0x00000000c00323a8                p_sys_stack
+                0x00000000c00323ac                p_tcp_daemon_stack
+                0x00000000c00323b0                ftp_control_seq
+                0x00000000c00323b4                p_recv_nbuf
+                0x00000000c00323b8                flg_ftp_filests
+                0x00000000c00323bc                p_ppop3_state
+                0x00000000c00323c0                p_state_code
+                0x00000000c00323c4                p_dhcp_state_tab
+                0x00000000c00323c8                p_test2_stack
+                0x00000000c00323cc                p_snmp_stack
+                0x00000000c00323d0                dns_state
+                0x00000000c00323d4                sysrtime_sec
+                0x00000000c00323d8                flg_telnet_client
+                0x00000000c00323dc                p_test3_stack
+                0x00000000c00323e0                p_hhttp_stack
+                0x00000000c0032400                msg_tcpd
+                0x00000000c0061c0c                hd_vem_map
+                0x00000000c0061c10                flg_int
+                0x00000000c0061c14                p_ip_format
+                0x00000000c0061c18                dhcp_state
+                0x00000000c0061c1c                flg_ftp_data_end
+                0x00000000c0061c20                p_fs_stack
+                0x00000000c0061c24                pop3_state
+                0x00000000c0061c28                smtp_state
+                0x00000000c0061c2c                ftp_control_port
+                0x00000000c0061c30                sys_rtime
+                0x00000000c0061c34                p_test1_stack
+                0x00000000c0061c38                flg_ftp_login
+                0x00000000c0061c39                flg_pop3_client
+                0x00000000c0061c3c                p_telnet_cmd
+                0x00000000c0061c40                p_domain_name_format
+                0x00000000c0061c44                vfs
+                0x00000000c0061c48                p_ftp_stack
+                0x00000000c0061c4c                flg_ftp_type
+                0x00000000c0061c50                p_snmp_state_tab
+                0x00000000c0061c54                pnet_dev
+                0x00000000c0061c58                req_ip
+                0x00000000c0061c5c                p_tftp_stack
+                0x00000000c0061c60                data_size_total_bytes
+                0x00000000c0061c64                p_tmp_data
+                0x00000000c0061c68                p_smtp_cmd
+                0x00000000c0061c6c                snmp_state
+                0x00000000c0061c80                proc_tab
+                0x00000000c0067720                p_ddhcp_stack
+                0x00000000c0067724                p_domain_name
+                0x00000000c0067728                ftp_control_state
+                0x00000000c006772c                p_pop3_cmd
+                0x00000000c0067730                p_server_smtp_cmd
+                0x00000000c0067734                p_smtp_state_tab
+                0x00000000c0067738                http_state
+                0x00000000c006773c                flg_ftp_port
+                0x00000000c0067740                fsbuf
+                0x00000000c0068740                send_buf_start_addr
+                0x00000000c0068744                flg_ftp_ls
+                0x00000000c0068748                p_tftp_state_tab
+                0x00000000c0068760                u_fs
+                0x00000000c0068790                sys_ntime
+                0x00000000c0068794                p_uproc_stack
+                0x00000000c0068798                p_telnet_state_tab
+                0x00000000c006879c                p_telnet_stack
+                0x00000000c00687a0                p_hhttp_state_tab
+                0x00000000c00687a4                flg_ftp_put
+                0x00000000c00687a8                tftp_state
+                0x00000000c00687ac                flg_ftp_syst
+                0x00000000c00687b0                g_trans_id
+                0x00000000c00687b4                telnet_state
+                0x00000000c00687b8                p_http_method
+                0x00000000c00687bc                p_dns_stack
+                0x00000000c00687c0                iden_server_ip
+                0x00000000c00687c4                p_smtp_stack
+                0x00000000c00687c8                p_send_nbuf
+                0x00000000c00687cc                mem_stratigic
+                0x00000000c00687d0                sysntime_sec
+                0x00000000c00687d4                ftp_control_ack
+                0x00000000c00687d8                part
+                0x00000000c00687dc                flg_ftp_get
+                0x00000000c00687e0                p_hd_stack
+                0x00000000c00687e4                p_msg_stack
+                0x00000000c00687e8                p_net_stack
+                0x00000000c00687ec                p_pop3_stack
+                0x00000000c00687f0                flg_ftp_quit
+                0x00000000c00687f4                p_pop3_state_tab
+                0x00000000c0068800                msg_q
+                0x00000000c0069e20                hdbuf
+                0x00000000c006ae20                recv_buf_start_addr
+                0x00000000c006ae24                proc_ready
+                0x00000000c006ae28                flg_client
+                0x00000000c006ae2c                p_mailname
+                0x00000000c006ae30                package
+                0x00000000c006ae34                cmdl
+                0x00000000c006ae38                flg_ftp_pass
+                0x00000000c006ae39                flg_ftp_data_start
+                0x00000000c006ae3a                flg_ftp_close
+                0x00000000c006ae3c                p_ssmtp_state
+                0x00000000c006ae40                p_telnet_state
+                0x00000000c006ae44                p_dns_state_tab
+                0x00000000c006ae48                ftp_data_port
+ *fill*         0x00000000c006ae4a       0x16 00
+ COMMON         0x00000000c006ae60     0x2000 src/mesg/mesg.o
+                0x00000000c006ae60                msg_stack
+ COMMON         0x00000000c006ce60     0x2000 src/tty/tty.o
+                0x00000000c006ce60                tty_stack
+ COMMON         0x00000000c006ee60     0x2060 src/hd/hd.o
+                0x00000000c006ee60                shdinfo
+                0x00000000c006eec0                hd_stack
+ COMMON         0x00000000c0070ec0     0x2000 src/fs/vfs.o
+                0x00000000c0070ec0                fs_stack
+ COMMON         0x00000000c0072ec0     0x2000 src/sys/sys.o
+                0x00000000c0072ec0                sys_stack
+ COMMON         0x00000000c0074ec0     0x2020 src/uproc/uproc.o
+                0x00000000c0074ec0                uproc_stack
+                0x00000000c0076ec0                vem_map
+ COMMON         0x00000000c0076ee0        0x4 src/pci/pci.o
+                0x00000000c0076ee0                pcidev
+ *fill*         0x00000000c0076ee4       0x1c 00
+ COMMON         0x00000000c0076f00     0x2034 src/net/net.o
+                0x00000000c0076f00                ack
+                0x00000000c0076f04                connect_seq
+                0x00000000c0076f20                net_stack
+                0x00000000c0078f20                p_tcp_state_tab
+                0x00000000c0078f24                tcp_state
+                0x00000000c0078f28                client_port
+                0x00000000c0078f2c                seq
+                0x00000000c0078f30                connect_ack
+ *fill*         0x00000000c0078f34        0xc 00
+ COMMON         0x00000000c0078f40      0x5ec src/net/rtl8029.o
+                0x00000000c0078f40                npkg
+ COMMON         0x00000000c007952c        0x4 src/net/icmp.o
+                0x00000000c007952c                sys_routetbl
+ *fill*         0x00000000c0079530       0x10 00
+ COMMON         0x00000000c0079540      0x5c8 src/net/dy_routes.o
+                0x00000000c0079540                tmp_ospf_data
+ *fill*         0x00000000c0079b08       0x18 00
+ COMMON         0x00000000c0079b20     0x2000 src/net/ftp/ftp.o
+                0x00000000c0079b20                ftp_stack
+ COMMON         0x00000000c007bb20     0x2000 src/net/tcp/tcp_daemon.o
+                0x00000000c007bb20                tcp_daemon_stack
+ COMMON         0x00000000c007db20     0x2000 src/net/dhcp/dhcp.o
+                0x00000000c007db20                dhcp_stack
+ COMMON         0x00000000c007fb20     0x2000 src/net/tftp/tftp.o
+                0x00000000c007fb20                tftp_stack
+ COMMON         0x00000000c0081b20     0x2000 src/net/dns/dns.o
+                0x00000000c0081b20                dns_stack
+ COMMON         0x00000000c0083b20     0x2000 src/net/snmp/snmp.o
+                0x00000000c0083b20                snmp_stack
+ COMMON         0x00000000c0085b20     0x2020 src/net/http/http.o
+                0x00000000c0085b20                http_fun
+                0x00000000c0085b24                dest_ip
+                0x00000000c0085b40                http_stack
+ COMMON         0x00000000c0087b40     0x2024 src/net/smtp/smtp.o
+                0x00000000c0087b40                smtp_dest_ip
+                0x00000000c0087b60                smtp_stack
+                0x00000000c0089b60                smtp_fun
+ *fill*         0x00000000c0089b64       0x1c 00
+ COMMON         0x00000000c0089b80     0x2024 src/net/pop3/pop3.o
+                0x00000000c0089b80                pop3_fun
+                0x00000000c0089ba0                pop3_stack
+                0x00000000c008bba0                pop3_dest_ip
+ *fill*         0x00000000c008bba4       0x1c 00
+ COMMON         0x00000000c008bbc0     0x2020 src/net/telnet/telnet.o
+                0x00000000c008bbc0                telnet_dest_ip
+                0x00000000c008bbc4                telnet_fun
+                0x00000000c008bbe0                telnet_stack
+                0x00000000c008dbe0                . = ALIGN ((. != 0x0)?0x4:0x1)
+                0x00000000c008dbe0                . = ALIGN (0x4)
+                0x00000000c008dbe0                . = ALIGN (0x4)
+                0x00000000c008dbe0                _end = .
+                0x00000000c008dbe0                PROVIDE (end, .)
+                0x00000000c008dbe0                . = DATA_SEGMENT_END (.)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x2a
+ *(.comment)
+ .comment       0x0000000000000000       0x2a src/kernel/8259a.o
+                                         0x2b (size before relaxing)
+ .comment       0x0000000000000000       0x2b src/kernel/proc.o
+ .comment       0x0000000000000000       0x2b src/kernel/clock.o
+ .comment       0x0000000000000000       0x2b src/kernel/signal.o
+ .comment       0x0000000000000000       0x2b src/kernel/syscallc.o
+ .comment       0x0000000000000000       0x2b src/mesg/mesg.o
+ .comment       0x0000000000000000       0x2b src/keyboard/keyboard.o
+ .comment       0x0000000000000000       0x2b src/tty/tty.o
+ .comment       0x0000000000000000       0x2b src/hd/hd.o
+ .comment       0x0000000000000000       0x2b src/fs/dts/fs.o
+ .comment       0x0000000000000000       0x2b src/fs/vfs.o
+ .comment       0x0000000000000000       0x2b src/hd/hd_manager.o
+ .comment       0x0000000000000000       0x2b src/fs/vfslib.o
+ .comment       0x0000000000000000       0x2b src/hd/partition.o
+ .comment       0x0000000000000000       0x2b src/sys/sys.o
+ .comment       0x0000000000000000       0x2b src/sys/time.o
+ .comment       0x0000000000000000       0x2b src/uproc/uproc.o
+ .comment       0x0000000000000000       0x2b src/uproc/ucrt.o
+ .comment       0x0000000000000000       0x2b src/uproc/mem_manage.o
+ .comment       0x0000000000000000       0x2b src/uproc/page.o
+ .comment       0x0000000000000000       0x2b src/pci/pci.o
+ .comment       0x0000000000000000       0x2b src/net/net.o
+ .comment       0x0000000000000000       0x2b src/net/rtl8029.o
+ .comment       0x0000000000000000       0x2b src/net/ethernet.o
+ .comment       0x0000000000000000       0x2b src/net/frame.o
+ .comment       0x0000000000000000       0x2b src/net/icmp.o
+ .comment       0x0000000000000000       0x2b src/net/ipv4.o
+ .comment       0x0000000000000000       0x2b src/net/route.o
+ .comment       0x0000000000000000       0x2b src/net/traceroutes.o
+ .comment       0x0000000000000000       0x2b src/net/udp.o
+ .comment       0x0000000000000000       0x2b src/net/dy_routes.o
+ .comment       0x0000000000000000       0x2b src/net/igmp.o
+ .comment       0x0000000000000000       0x2b src/net/tcp/tcp.o
+ .comment       0x0000000000000000       0x2b src/net/ftp/ftp.o
+ .comment       0x0000000000000000       0x2b src/net/ftp/ftp_lib.o
+ .comment       0x0000000000000000       0x2b src/net/ftp/ftp_cmd.o
+ .comment       0x0000000000000000       0x2b src/net/tcp/tcp_daemon.o
+ .comment       0x0000000000000000       0x2b src/net/dhcp/dhcp.o
+ .comment       0x0000000000000000       0x2b src/net/dhcp/dhcp_lib.o
+ .comment       0x0000000000000000       0x2b src/net/tftp/tftp.o
+ .comment       0x0000000000000000       0x2b src/net/tftp/tftp_lib.o
+ .comment       0x0000000000000000       0x2b src/net/dns/dns.o
+ .comment       0x0000000000000000       0x2b src/net/dns/dns_lib.o
+ .comment       0x0000000000000000       0x2b src/net/snmp/snmp.o
+ .comment       0x0000000000000000       0x2b src/net/snmp/snmp_lib.o
+ .comment       0x0000000000000000       0x2b src/net/http/http.o
+ .comment       0x0000000000000000       0x2b src/net/http/http_lib.o
+ .comment       0x0000000000000000       0x2b src/net/http/http_cmd.o
+ .comment       0x0000000000000000       0x2b src/net/smtp/smtp.o
+ .comment       0x0000000000000000       0x2b src/net/smtp/smtp_client.o
+ .comment       0x0000000000000000       0x2b src/net/smtp/smtp_cmd.o
+ .comment       0x0000000000000000       0x2b src/net/smtp/smtp_server.o
+ .comment       0x0000000000000000       0x2b src/net/pop3/pop3.o
+ .comment       0x0000000000000000       0x2b src/net/pop3/pop3_client.o
+ .comment       0x0000000000000000       0x2b src/net/pop3/pop3_cmd.o
+ .comment       0x0000000000000000       0x2b src/net/pop3/pop3_server.o
+ .comment       0x0000000000000000       0x2b src/net/telnet/telnet.o
+ .comment       0x0000000000000000       0x2b src/net/telnet/telnet_client.o
+ .comment       0x0000000000000000       0x2b src/net/telnet/telnet_cmd.o
+ .comment       0x0000000000000000       0x2b src/net/telnet/telnet_server.o
+ .comment       0x0000000000000000       0x2b src/lib/adthas.a(string.o)
+ .comment       0x0000000000000000       0x2b src/lib/adthas.a(libc.o)
+ .comment       0x0000000000000000       0x2b src/lib/adthas.a(mkdir.o)
+ .comment       0x0000000000000000       0x2b src/lib/adthas.a(mkfile.o)
+ .comment       0x0000000000000000       0x2b src/lib/adthas.a(cat.o)
+ .comment       0x0000000000000000       0x2b src/lib/adthas.a(getmsg.o)
+ .comment       0x0000000000000000       0x2b src/lib/adthas.a(sendmsg.o)
+ .comment       0x0000000000000000       0x2b src/lib/adthas.a(read.o)
+ .comment       0x0000000000000000       0x2b src/lib/adthas.a(libsys.o)
+ .comment       0x0000000000000000       0x2b src/lib/adthas.a(write.o)
+ .comment       0x0000000000000000       0x2b src/lib/adthas.a(readb.o)
+ .comment       0x0000000000000000       0x2b src/lib/adthas.a(printk.o)
+ .comment       0x0000000000000000       0x2b src/lib/adthas.a(libn.o)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info .gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.gnu.attributes
+ *(.gnu.attributes)
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+ *(.gnu.lto_*)
+OUTPUT(src/kernel/akrl.bin elf32-i386)

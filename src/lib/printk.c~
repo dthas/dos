@@ -1,0 +1,181 @@
+//===========================================================================
+// printf.c
+//   Copyright (C) 2012 Free Software Foundation, Inc.
+//   Originally by ZhaoFeng Liang <zhf.liang@outlook.com>
+//
+//This file is part of DTHAS.
+//
+//DTHAS is free software; you can redistribute it and/or modify
+//it under the terms of the GNU General Public License as published by
+//the Free Software Foundation; either version 2 of the License, or 
+//(at your option) any later version.
+//
+//DTHAS is distributed in the hope that it will be useful,
+//but WITHOUT ANY WARRANTY; without even the implied warranty of
+//MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//GNU General Public License for more details.
+//
+//You should have received a copy of the GNU General Public License
+//along with DTHAS; If not, see <http://www.gnu.org/licenses/>.  
+//===========================================================================
+
+#include	"type.h"
+#include	"prototype.h"
+#include	"kernel.h"
+#include	"keyboard.h"
+#include	"tty.h"
+
+/*
+		|	cmd	|
+	 value->|---------------|
+		|	value1  |
+		|---------------|
+		|	value2  |
+		|---------------|
+		|	value3	|
+		|---------------|
+
+Pay attention:
+	value1 , value2 and value3 are not alwalys the pointers.
+
+if value1 is INT,  		then  value1 = (*value) , Which means value1 is a INT value in the stack
+if value2 is CHAR, 		then  value2 = (*value) , Which means value2 is a INT value in the stack
+if value3 is a string(char*), 	then  value3 = (**value), Which means value3 is a pointer in the stack
+
+for example,
+	printf("a = %d, b = %c, c = %s\n", 10, 'Y', "hello world");
+
+then, 	cmd = &"a = %d, b = %c, c = %s\n" (cmd ==> "a = %d, b = %c, c = %s\n");
+	value = &cmd + 4; 
+	parameter list = 10, 'Y', "hello world";
+	
+
+In detail, value1 = 10, value2 = 'Y', value3 = &"hello world"(Pay attention, it's a pointer)
+
+		|	cmd	|
+ value(&cmd+4)->|---------------|
+		|	10	|
+		|---------------|
+		|	Y	|
+		|---------------|
+		|&"hello world"	| == point to the real string ==> "hello world"
+		|---------------|
+*/
+PUBLIC	s32 printk(char *cmd, ...)
+{
+	char *value = (char*)((char*)(&cmd) + 4);
+
+	printk_exec(cmd, value);
+
+	return 0;
+}
+
+PUBLIC	s32 printk_exec(char *cmd, char *value)
+{
+	//---------------------------------
+	//modi on 2012-2-16
+	//char output_buf[256];
+	char output_buf[1024];
+	//---------------------------------
+
+	char tmp_buf[64];
+	s32  len = 0;
+	char *head = output_buf;
+	int  num;
+	int  ret;
+	int  i=0;
+	//char** valp;
+
+	//---------------------------------
+	//modi on 2012-2-16
+	//add on 201-11-4
+	//clear_buf(output_buf,256);
+	clear_buf(output_buf,1024);
+	//---------------------------------
+
+	while(*cmd)
+	{
+		if (*cmd == '%')
+		{
+			switch(*(++cmd))
+			{
+				case 'd' :
+					clear_buf(tmp_buf,64);
+
+					num = *(int*)(value);
+					i2s(num, tmp_buf);
+						
+					//modi on 2012-11-30					
+					//len 	+= strlen(tmp_buf);	
+					len 	= strlen(tmp_buf);			
+					strcopy(head, tmp_buf);
+					
+					head 	+= len;
+					value 	+= 4;
+					cmd++;
+					break;
+				case 's' :
+					//valp = value;
+					//len 	+= strlen(*valp);			
+					//strcopy(head, *valp);
+					
+					// According to  the definition, *value represents a character(8-bit length)
+					// Since this is a string, (*value) should be an address. So, need to extend its 						// length from (char*) to (int*). Therefore, *(int*)value is a 32-bit address.
+
+					//modi on 2012-11-30
+					//len 	+= strlen((char*)(*(int*)value));  
+					len 	= strlen((char*)(*(int*)value));
+			
+					strcopy(head, (char*)(*(int*)value));
+					
+					head 	+= len;
+					value 	+= 4;
+					cmd++;
+					break;
+				case 'c' :
+					*head = *(value);
+										
+					head++;
+					value 	+= 4;
+					cmd++;
+					break;
+				case 'x' :
+					clear_buf(tmp_buf,64);	
+
+					num = *(int*)(value);
+					i2h(num, tmp_buf);
+					//modi on 2012-11-30
+					//len 	+= strlen(tmp_buf);
+					len 	= strlen(tmp_buf);
+			
+					strcopy(head, tmp_buf);	
+
+					head 	+= len;
+					value 	+= 4;
+					cmd++;
+					break;
+				default:
+					//modi on 2012-9-20
+					//disp_dword(*value);
+					break;
+			}
+				
+		}
+		else
+		{
+			*head = *cmd;
+			head++;
+			cmd++;
+		}
+	}
+
+	//add on 201-11-4
+	//*head = NULL;
+ 
+	//modi on 2012-11-30
+	//puts(output_buf, (head - output_buf));
+	//prints(output_buf);
+	sys_prints(output_buf);
+}
+
+

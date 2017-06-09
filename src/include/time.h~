@@ -1,0 +1,54 @@
+//===========================================================================
+// time.h
+//   Copyright (C) 2012 Free Software Foundation, Inc.
+//   Originally by ZhaoFeng Liang <zhf.liang@outlook.com>
+//
+//This file is part of DTHAS.
+//
+//DTHAS is free software; you can redistribute it and/or modify
+//it under the terms of the GNU General Public License as published by
+//the Free Software Foundation; either version 2 of the License, or 
+//(at your option) any later version.
+//
+//DTHAS is distributed in the hope that it will be useful,
+//but WITHOUT ANY WARRANTY; without even the implied warranty of
+//MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//GNU General Public License for more details.
+//
+//You should have received a copy of the GNU General Public License
+//along with DTHAS; If not, see <http://www.gnu.org/licenses/>.  
+//===========================================================================
+
+#ifndef	_X_TIME_H_
+#define	_X_TIME_H_
+
+/*
+//have been moved to sys.h
+
+#define	DATE_OFF_CENT	0x32
+#define	DATE_OFF_YEAR	0x9
+#define	DATE_OFF_MON	0x8
+#define	DATE_OFF_DAY	0x7
+#define	DATE_OFF_HOUR	0x4
+#define	DATE_OFF_MIN	0x2
+#define	DATE_OFF_SEC	0x0
+
+
+struct s_time
+{
+	u8	cent;
+	u8	year;
+	u8	mon;
+	u8	day;
+	u8	hour;
+	u8	min;
+	u8	sec;
+};
+
+struct s_time	*sys_rtime;	//is the time that the system start to run
+struct s_time	*sys_ntime;	//now
+
+u64	sysrtime_sec;
+*/
+
+#endif

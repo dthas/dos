@@ -1,0 +1,332 @@
+//===========================================================================
+// frame.c
+//   Copyright (C) 2012 Free Software Foundation, Inc.
+//   Originally by ZhaoFeng Liang <zhf.liang@outlook.com>
+//
+//This file is part of DTHAS.
+//
+//DTHAS is free software; you can redistribute it and/or modify
+//it under the terms of the GNU General Public License as published by
+//the Free Software Foundation; either version 2 of the License, or 
+//(at your option) any later version.
+//
+//DTHAS is distributed in the hope that it will be useful,
+//but WITHOUT ANY WARRANTY; without even the implied warranty of
+//MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//GNU General Public License for more details.
+//
+//You should have received a copy of the GNU General Public License
+//along with DTHAS; If not, see <http://www.gnu.org/licenses/>.  
+//===========================================================================
+
+#include	"type.h"
+#include	"stdio.h"
+#include	"signal.h"
+#include	"kernel.h"
+#include	"global.h"
+#include	"sys.h"
+#include	"tty.h"
+#include	"keyboard.h"
+#include	"mesg.h"
+#include	"dtsfs.h"
+#include	"fs.h"
+#include	"vfs.h"
+#include	"hd.h"
+#include	"partition.h"
+#include	"proc.h"
+#include	"frame.h"
+#include	"net.h"
+#include	"prototype.h"
+
+//===========================================================================
+// build_frame
+//===========================================================================
+PUBLIC	void 	build_frame(struct s_package *pkg, u16 type, u16 op, struct hwaddr dst_mac, struct iaddr dst_ip, struct hwaddr src_mac, struct iaddr src_ip)
+{
+	struct frame8023_header *fh 	= (struct frame8023_header *)(pkg->buffer);
+	struct frame_arp_req *fc 	= (struct frame_arp_req *)(&(pkg->buffer[FRAME_HEADER_LENGTH]));
+	
+	//-------------------------------------------------------------------------
+	// frame header
+	//-------------------------------------------------------------------------
+	fh->dst_mac.addr1	= dst_mac.addr1;
+	fh->dst_mac.addr2	= dst_mac.addr2;
+	fh->dst_mac.addr3	= dst_mac.addr3;
+	fh->dst_mac.addr4	= dst_mac.addr4;
+	fh->dst_mac.addr5	= dst_mac.addr5;
+	fh->dst_mac.addr6	= dst_mac.addr6;
+
+	fh->src_mac.addr1	= src_mac.addr1;
+	fh->src_mac.addr2	= src_mac.addr2;
+	fh->src_mac.addr3	= src_mac.addr3;
+	fh->src_mac.addr4	= src_mac.addr4;
+	fh->src_mac.addr5	= src_mac.addr5;
+	fh->src_mac.addr6	= src_mac.addr6;
+
+	fh->type		= big_little_16(type);
+
+	//-------------------------------------------------------------------------
+	// frame content
+	//-------------------------------------------------------------------------
+	fc->hw_type		= big_little_16(F_HW_TYPE);
+	fc->protocol_type	= big_little_16(FRAME_IP_TYPE);
+	fc->hwaddrlength	= 6;
+	fc->protocoladdrlength	= 4;
+	fc->op			= big_little_16(op);
+
+	fc->src_mac.addr1	= src_mac.addr1;
+	fc->src_mac.addr2	= src_mac.addr2;
+	fc->src_mac.addr3	= src_mac.addr3;
+	fc->src_mac.addr4	= src_mac.addr4;
+	fc->src_mac.addr5	= src_mac.addr5;
+	fc->src_mac.addr6	= src_mac.addr6;
+
+	fc->src_ip.addr1	= src_ip.addr1;
+	fc->src_ip.addr2	= src_ip.addr2;
+	fc->src_ip.addr3	= src_ip.addr3;
+	fc->src_ip.addr4	= src_ip.addr4;
+
+	fc->dst_mac.addr1	= dst_mac.addr1;
+	fc->dst_mac.addr2	= dst_mac.addr2;
+	fc->dst_mac.addr3	= dst_mac.addr3;
+	fc->dst_mac.addr4	= dst_mac.addr4;
+	fc->dst_mac.addr5	= dst_mac.addr5;
+	fc->dst_mac.addr6	= dst_mac.addr6;
+
+	fc->dst_ip.addr1	= dst_ip.addr1;
+	fc->dst_ip.addr2	= dst_ip.addr2;
+	fc->dst_ip.addr3	= dst_ip.addr3;
+	fc->dst_ip.addr4	= dst_ip.addr4;
+
+	//-------------------------------------------------------------------------
+	// add PAD while frame length is less than 60 bytes
+	//-------------------------------------------------------------------------
+	s32 i;
+	for(i=42; i<60; i++)
+	{
+		pkg->buffer[i] = 1;
+	}	
+
+	pkg->length 	= 60;	
+}
+
+
+
+//===========================================================================
+// add_frame_header
+//===========================================================================
+PUBLIC	void 	add_frame_header(struct s_package *pkg, u16 type, struct hwaddr dst_mac, struct hwaddr src_mac)
+{
+	struct frame8023_header *fh 	= (struct frame8023_header *)(pkg->buffer);
+		
+	//-------------------------------------------------------------------------
+	// frame header
+	//-------------------------------------------------------------------------
+	fh->dst_mac.addr1	= dst_mac.addr1;
+	fh->dst_mac.addr2	= dst_mac.addr2;
+	fh->dst_mac.addr3	= dst_mac.addr3;
+	fh->dst_mac.addr4	= dst_mac.addr4;
+	fh->dst_mac.addr5	= dst_mac.addr5;
+	fh->dst_mac.addr6	= dst_mac.addr6;
+
+	fh->src_mac.addr1	= src_mac.addr1;
+	fh->src_mac.addr2	= src_mac.addr2;
+	fh->src_mac.addr3	= src_mac.addr3;
+	fh->src_mac.addr4	= src_mac.addr4;
+	fh->src_mac.addr5	= src_mac.addr5;
+	fh->src_mac.addr6	= src_mac.addr6;
+
+	fh->type		= big_little_16(type);	
+}
+
+
+//===========================================================================
+// pkg_main
+//===========================================================================
+/*
+PUBLIC	void 	frame_process(struct s_package *pkg)
+{
+	//struct frame8023_8029_header * fr8023h = (struct frame8023_8029_header *)(pkg->buffer);
+	struct frame8023_header * fr8023h = (struct frame8023_header *)(pkg->buffer);
+
+	
+//for test
+//	printk("status:%d, npage:%d, len:%d, type/len:%d", fr8023h->status, fr8023h->nextpage, fr8023h->length, fr8023h->type);
+//	printk("\n");
+//	printk("dst_mac:[%x:%x:%x:%x:%x:%x]", fr8023h->dst_mac.addr1,fr8023h->dst_mac.addr2, fr8023h->dst_mac.addr3,fr8023h->dst_mac.addr4, fr8023h->dst_mac.addr5,fr8023h->dst_mac.addr6);
+//	printk("\n");
+//	printk("src_mac:[%x:%x:%x:%x:%x:%x]", fr8023h->src_mac.addr1,fr8023h->src_mac.addr2, fr8023h->src_mac.addr3,fr8023h->src_mac.addr4, fr8023h->src_mac.addr5,fr8023h->src_mac.addr6);
+//	printk("\n");
+
+	//disp_str("[status:");
+	//disp_num(fr8023h->status);
+	//disp_str(",npage:");
+	//disp_num(fr8023h->nextpage);
+	//disp_str(",len:");
+	//disp_num(fr8023h->length);
+
+	//if((fr8023h->dst_mac.addr1 == 0xa1) && (fr8023h->dst_mac.addr2 == 0xb1) && (fr8023h->dst_mac.addr3 == 0xc1) && (fr8023h->dst_mac.addr4 == 0xd1) && (fr8023h->dst_mac.addr5 == 0xe1) && (fr8023h->dst_mac.addr6 == 0xf1))
+	//if(fr8023h->dst_mac.addr1 == 0xa1)
+	//{
+
+		disp_str(",type:");
+		disp_num(fr8023h->type);
+		disp_str(",dst_mac:");
+		disp_num(fr8023h->dst_mac.addr1);
+		disp_str(":");
+		disp_num(fr8023h->dst_mac.addr2);
+		disp_str(":");
+		disp_num(fr8023h->dst_mac.addr3);
+		disp_str(":");
+		disp_num(fr8023h->dst_mac.addr4);
+		disp_str(":");
+		disp_num(fr8023h->dst_mac.addr5);
+		disp_str(":");
+		disp_num(fr8023h->dst_mac.addr6);
+
+		disp_str(";src_mac:");
+		disp_num(fr8023h->src_mac.addr1);
+		disp_str(":");
+		disp_num(fr8023h->src_mac.addr2);
+		disp_str(":");
+		disp_num(fr8023h->src_mac.addr3);
+		disp_str(":");
+		disp_num(fr8023h->src_mac.addr4);
+		disp_str(":");
+		disp_num(fr8023h->src_mac.addr5);
+		disp_str(":");
+		disp_num(fr8023h->src_mac.addr6);
+		disp_str("]");
+	//}
+
+}
+*/
+
+//===========================================================================
+// pkg_main
+//===========================================================================
+PUBLIC	struct s_package *	build_test_frame(struct s_package *tpkg)
+{
+
+	struct frame8023_header *f	= (struct frame8023_header *)(&(tpkg->buffer[0]));
+
+	f->dst_mac.addr1= 0x12;
+	f->dst_mac.addr2= 0x22;
+	f->dst_mac.addr3= 0x32;
+	f->dst_mac.addr4= 0x42;
+	f->dst_mac.addr5= 0x52;
+	f->dst_mac.addr6= 0x62;
+
+	f->src_mac.addr1= 0xa1;
+	f->src_mac.addr2= 0xb1;
+	f->src_mac.addr3= 0xc1;
+	f->src_mac.addr4= 0xd1;
+	f->src_mac.addr5= 0xe1;
+	f->src_mac.addr6= 0xf1;
+
+	//f->type		= 0x0806;
+	f->type		= FRAME_ARP_TYPE;	//0x0608
+
+	struct frame_arp_req *arpr 	= (struct frame_arp_req *)(&(tpkg->buffer[FRAME_HEADER_LENGTH]));
+
+	//arpr->hw_type		= 1;
+	//arpr->protocol_type	= 0x0800;
+	arpr->hw_type		= 0x0100;
+	arpr->protocol_type	= 0x0008;
+	arpr->hwaddrlength	= 6;
+	arpr->protocoladdrlength= 4;
+	//arpr->op		= 1;
+	arpr->op		= 0x0100;
+
+	arpr->src_mac.addr1	= 0xa1;
+	arpr->src_mac.addr2	= 0xb1;
+	arpr->src_mac.addr3	= 0xc1;
+	arpr->src_mac.addr4	= 0xd1;
+	arpr->src_mac.addr5	= 0xe1;
+	arpr->src_mac.addr6	= 0xf1;
+
+	arpr->src_ip.addr1	= 101;
+	arpr->src_ip.addr2	= 102;
+	arpr->src_ip.addr3	= 103;
+	arpr->src_ip.addr4	= 104;
+
+	arpr->dst_mac.addr1	= 0x12;
+	arpr->dst_mac.addr2	= 0x22;
+	arpr->dst_mac.addr3	= 0x32;
+	arpr->dst_mac.addr4	= 0x42;
+	arpr->dst_mac.addr5	= 0x52;
+	arpr->dst_mac.addr6	= 0x62;
+
+	arpr->dst_ip.addr1	= 192;
+	arpr->dst_ip.addr2	= 168;
+	arpr->dst_ip.addr3	= 131;
+	arpr->dst_ip.addr4	= 22;
+
+
+/*
+
+	tpkg->buffer[0]		= 0x00;
+	tpkg->buffer[1]		= 0x1a;
+	tpkg->buffer[2]		= 0x4d;
+	tpkg->buffer[3]		= 0x66;
+	tpkg->buffer[4]		= 0xd4;
+	tpkg->buffer[5]		= 0xf9;
+	tpkg->buffer[6]		= 0xa1;
+	tpkg->buffer[7]		= 0xb1;
+	tpkg->buffer[8]		= 0xc1;
+	tpkg->buffer[9]		= 0xd1;
+	tpkg->buffer[10]	= 0xe1;
+	tpkg->buffer[11]	= 0xf1;
+
+	tpkg->buffer[12]	= 0x08;
+	tpkg->buffer[13]	= 0x06;
+	tpkg->buffer[14]	= 0x0;
+	tpkg->buffer[15]	= 0x1;
+	tpkg->buffer[16]	= 0x80;
+	tpkg->buffer[17]	= 0x00;
+	tpkg->buffer[18]	= 0x6;
+	tpkg->buffer[19]	= 0x4;
+	tpkg->buffer[20]	= 0x0;
+	tpkg->buffer[21]	= 0x1;
+
+	tpkg->buffer[22]	= 0xa1;
+	tpkg->buffer[23]	= 0xb1;
+	tpkg->buffer[24]	= 0xc1;
+	tpkg->buffer[25]	= 0xd1;
+	tpkg->buffer[26]	= 0xe1;
+	tpkg->buffer[27]	= 0xf1;
+	tpkg->buffer[28]	= 192;
+	tpkg->buffer[29]	= 168;
+	tpkg->buffer[30]	= 131;
+	tpkg->buffer[31]	= 11;
+	
+	tpkg->buffer[32]	= 0x00;
+	tpkg->buffer[33]	= 0x1a;
+	tpkg->buffer[34]	= 0x4d;
+	tpkg->buffer[35]	= 0x66;
+	tpkg->buffer[36]	= 0xd4;
+	tpkg->buffer[37]	= 0xf9;
+
+	tpkg->buffer[38]	= 192;
+	tpkg->buffer[39]	= 168;
+	tpkg->buffer[40]	= 131;
+	tpkg->buffer[41]	= 3;
+	
+*/
+	
+	
+
+
+	s32 i;
+	for(i=42; i<60; i++)
+	{
+		tpkg->buffer[i] = 1;
+	}	
+
+	tpkg->length 	= 60;
+
+	return tpkg;
+}
+
+
+

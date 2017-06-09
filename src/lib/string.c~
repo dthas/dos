@@ -1,0 +1,126 @@
+//===========================================================================
+// strcmp.c
+//   Copyright (C) 2012 Free Software Foundation, Inc.
+//   Originally by ZhaoFeng Liang <zhf.liang@outlook.com>
+//
+//This file is part of DTHAS.
+//
+//DTHAS is free software; you can redistribute it and/or modify
+//it under the terms of the GNU General Public License as published by
+//the Free Software Foundation; either version 2 of the License, or 
+//(at your option) any later version.
+//
+//DTHAS is distributed in the hope that it will be useful,
+//but WITHOUT ANY WARRANTY; without even the implied warranty of
+//MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//GNU General Public License for more details.
+//
+//You should have received a copy of the GNU General Public License
+//along with DTHAS; If not, see <http://www.gnu.org/licenses/>.  
+//===========================================================================
+
+#include	"type.h"
+#include	"prototype.h"
+#include	"kernel.h"
+#include	"global.h"
+#include	"keyboard.h"
+#include	"tty.h"
+
+
+PUBLIC 	void strcopy(char *dest, char *src)
+{
+	while(*src != NULL)
+	{
+		*dest = *src;
+		dest++;
+		src++;
+	}
+}
+
+PUBLIC 	void strcpy(char *dest, char *src, s32 len)
+{
+	s32 i;
+
+	for(i=0; i<len; i++)
+	{
+		*dest++ = *src++;
+	}	
+}
+
+PUBLIC 	void memcpy(u8 *dest, u8 *src, s32 len)
+{
+	s32 i;
+
+	for(i=0; i<len; i++)
+	{
+		*dest++ = *src++;
+	}	
+}
+
+PUBLIC 	int strlen(char *buf)
+{
+	int len = 0;
+
+	while(*buf != NULL)
+	{
+		len++;
+		buf++;
+	}
+
+	return len;
+}
+
+PUBLIC 	s8 strcmp(char *dest, char *src)
+{
+	s32	lend = strlen(dest);
+	s32	lens = strlen(src);
+
+//----test
+/*
+	s8	*s201= "(lend=";
+	disp_str(s201);
+	disp_num(lend);
+
+	s8	*s202= ", lens=";
+	disp_str(s202);
+	disp_num(lens);
+	
+	s8	*s209= "; )";
+	disp_str(s209);
+*/
+//----test
+
+	if(lend != lens)
+	{
+		return FALSE;
+	}
+
+	for(; lend > 0; lend--)
+	{
+		if(*dest++ != *src++)
+		{
+			break;
+		}		
+	}
+
+//----test
+/*
+	s8	*s211= "(result=";
+	disp_str(s211);
+	disp_num(lend);
+
+	s8	*s219= "; )";
+	disp_str(s219);
+*/
+//----test
+
+	if(lend == 0)
+	{
+		return TRUE;
+	}
+	else
+	{
+		return FALSE;
+	}
+}
+
